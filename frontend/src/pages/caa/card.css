@@ -1,0 +1,15 @@
+.uperCard {
+  height: 120px;
+  background: linear-gradient(40deg, #2096ff, #001529) !important;
+  overflow: hidden;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+.searchGuides {
+  margin-top: 250px;
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex;
+  text-align: -webkit-center;
+  flex-direction: column;
+}
