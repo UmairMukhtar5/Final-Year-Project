@@ -8,10 +8,13 @@ db = client["mydb"]
 comments = db["customer"]
 
 
-
-#livechat = LiveChat("https://www.youtube.com/watch?v=s4Pw40IPZo4")
-livechat = LiveChat(sys.argv[1])
-
+#url = "https://www.youtube.com/watch?v=mg7FweYjasE"
+url = sys.argv[1]
+livechat = LiveChat(url)
+#livechat = LiveChat(sys.argv[1])
+key = { "URL" : url }
+data = {"URL" : url}
+comments.update(key, data, upsert= True)
 
 
 while livechat.is_alive():
@@ -22,11 +25,12 @@ while livechat.is_alive():
         username = c.author.name
         comment = c.message
 
-        comm = {
-        "name" : username,
-        "comment" : comment
-        }
-        comments.insert_one(comm) 
+        #comm = {
+        #  "URL" : url
+        #"comment" : [comment]
+        #}
+        
+        comments.find_one_and_update({'URL' : url},{ '$push' : {'comment': comment}}) 
 
         chatdata.tick()
   except KeyboardInterrupt:

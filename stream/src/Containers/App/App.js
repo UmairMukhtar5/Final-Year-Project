@@ -10,6 +10,8 @@ const App = () => {
       <Route path="/" exact component={Home} />
       <Route path="/start-video-stream" component={StartVideo} />
       <Route path="/visualize-video-stream" component={Visualize} />
+      {/* <Route path="/instragram" component={Visualize} /> */}
+
     </React.Fragment>
   );
 };

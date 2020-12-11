@@ -3,6 +3,9 @@ import $ from "jquery";
 import io from "socket.io-client";
 import Button from "@material-ui/core/Button";
 import { MDBInput } from "mdbreact";
+import axios from 'axios';
+import Volozehowe from './visolizeshowansquestion';
+import {Autorenew} from '@material-ui/icons';
 import {
   GooSpinner
 } from "react-spinners-kit";
@@ -11,7 +14,8 @@ class Visualize extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      query: ""
+      query: "",
+      data:[]
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -41,7 +45,35 @@ class Visualize extends Component {
 
   componentDidMount() {
     this.VisualizeFunc();
+    this.handlefetchallquestion();
   }
+
+  handlefetchallquestion=async ()=>{
+
+    try {
+      const responsove=await axios.post('http://localhost:3000/streamings/vislutos/',
+      {
+        name:this.props.match.params.name
+      }
+      );
+      this.setState({data:responsove.data})
+
+     
+
+      
+    } catch (error) {
+      console.log('facing error ',error);
+    }
+
+
+
+}
+
+
+
+
+
+
   VisualizeFunc = () => {
     var socket = io.connect("http://localhost:4001");
 
@@ -54,6 +86,7 @@ class Visualize extends Component {
   };
   render() {
     return (
+
       <React.Fragment style={{
         overflowX: "hidden",
         overflowY: "hidden",
@@ -162,10 +195,48 @@ class Visualize extends Component {
                 >
                   SEND
           </Button>
+
               </div>
             </div>
-          </div></div>
-      </React.Fragment >
+            </div>
+
+
+
+
+          <Button
+        variant="contained"
+        color="default"
+        style={{
+          margin:'1rem'
+        }}
+        onClick={this.handlefetchallquestion}
+        startIcon={<Autorenew />}
+      >
+        Refresh Answers
+      </Button>
+
+      
+
+                  
+
+          {this.state.data.map(({question,answer},index)=>{
+            return <div style={{margin:'2rem'}}>
+          <Volozehowe
+            key={index}
+            index={index}
+            question={question}
+            answer={answer}
+            
+
+            />
+
+            </div>
+            
+          
+          })}
+
+          </div>
+      </React.Fragment>
     );
   }
 }

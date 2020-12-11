@@ -13,6 +13,8 @@ import StartVideo from "./pages/Dashboarddetails/StartVideo";
 import VisualiseVideo from "./pages/Dashboarddetails/Visualize";
 import CreateStream from "./pages/Dashboarddetails/CreateStream";
 import othersplatform from "./pages/Dashboarddetails/OthersPlatform";
+import Instragramplatform from "./pages/Dashboarddetails/instragramplatform";
+
 var authenticated = false;
 
 const BaseRouter = () => (
@@ -24,12 +26,13 @@ const BaseRouter = () => (
         <Route path="/signup" component={Pages}></Route>
 
         <Dashboard>
-          <Route exact path="/dashboard/" component={Dashboardcards}></Route>
-          <Route path="/add" component={StartVideo}></Route>
-          <Route path="/visualize/:name" component={VisualiseVideo}></Route>
-          <Route path="/profile" component={Profile}></Route>
-          <Route path="/createstream" component={CreateStream}></Route>
-          <Route path="/otherplatform" component={othersplatform}></Route>
+          <Route exact path="/dashboard/" exact component={Dashboardcards}></Route>
+          <Route path="/add" exact component={StartVideo}></Route>
+          <Route path="/visualize/:name" exact component={VisualiseVideo}></Route>
+          <Route path="/profile" exact component={Profile}></Route>
+          <Route path="/createstream" exact component={CreateStream}></Route>
+          <Route path="/otherplatform" exact component={othersplatform}></Route>
+          <Route path="/otherplatform/instragram" exact component={Instragramplatform}></Route>
         </Dashboard>
       </Switch>
     </Router>

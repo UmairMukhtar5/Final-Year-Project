@@ -10,6 +10,8 @@ var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
 var streamings = require("./routes/streamings");
 var othersPlatform = require("./routes/othersPlatform");
+var othersPlatform2 = require("./routes/othersPlatform2");
+
 var neww = require("./routes/new");
 
 /////////////////////
@@ -40,6 +42,9 @@ const mongoose = require("mongoose");
 app.use(passport.initialize());
 
 const url = config.mongoUrl;
+
+
+
 const connect = mongoose.connect(url);
 
 connect.then(
@@ -58,6 +63,8 @@ app.use("/streamings", streamings);
 
 app.use("/users", usersRouter);
 app.use("/othersPlatform", othersPlatform);
+app.use("/othersPlatform2", othersPlatform2);
+
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

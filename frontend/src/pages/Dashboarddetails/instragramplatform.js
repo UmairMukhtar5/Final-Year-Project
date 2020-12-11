@@ -10,7 +10,7 @@ import axios from "axios";
 
 // import FusionCharts from './Fusionchart';
 
-const API = "http://localhost:3000/othersPlatform";
+const API = "http://localhost:3000/othersPlatform2/instra";
 
 class OthersPlatform extends Component {
   
@@ -95,7 +95,7 @@ class OthersPlatform extends Component {
             }}
           >
             {" "}
-            PROCESSING QUERIES ...{" "}
+            PROCESSING QUERIES here ...{" "}
           </h1>
         </div>
       );
@@ -225,7 +225,7 @@ class OthersPlatform extends Component {
                 }}
               >
                 {" "}
-              YOUTUBE STREAM LINK
+              Instra Stream Link
             </h3>
             </div>
 

@@ -154,20 +154,99 @@ streamingRouter
 
 
 
-streamingRouter
+  streamingRouter
   .route("/getstream/:streamname")
-  .get((req, res, next) => {
-    Streamings.find({ name: req.params.streamname })
-      .then(
-        (streaming) => {
-          res.statusCode = 200;
-          res.setHeader("Content-Type", "application/json");
-          res.json(streaming);
-        },
-        (err) => next(err)
-      )
-      .catch((err) => next(err));
+  .get(async(req, res, next) => {
+    const streaming=await Streamings.find({ name: req.params.streamname });
+
+
+    const stream = req.body.streamname;
+
+    console.log(stream)
+
+    const spawn = require("child_process").spawn;
+    // let youtubeUrl= 'https://www.youtube.com/watch?v=gjPCYfXJIQU';
+  
+    const process1 = spawn("py", ["./StreamProcessing.py", stream]);
+  
+    process1.stdout.on("data", (data) => {
+      console.log(data.toString());
+      res.status(200).json({ msg: data.toString() });
+    });
+  
+    res.status(200).json({ msg: "a message" });
+
+  console.log('dsa ',streaming[0]);
+  res.send(streaming);
+  
+  // res.send(false)
+     
   })
+
+
+  streamingRouter
+  .route("/questionAnswer")
+  .post(async (req, res, next) => {
+
+    console.log('req.body ',req.body);
+
+    const {streamName,question,answer}= req.body;
+
+    const dataabx=await Streamings.findOne({name:streamName});
+
+    console.log('this is sllec ',dataabx);
+   
+    const reviwes={
+      question,
+      answer
+    
+    };
+
+  await dataabx.questionAnswer.push(reviwes)
+   const dsdfata=await dataabx.save();
+
+    console.log('result ',dsdfata);
+
+
+    res.send(dsdfata)
+
+
+
+  
+  })
+
+
+
+
+
+
+  streamingRouter
+  .route("/vislutos")
+  .post(async (req, res, next) => {
+
+    const {name}= req.body;
+    const dad=decodeURI(name);
+
+    console.log('here ',dad);
+
+
+    console.log('here is ',dad);
+   const dataabx=await Streamings.findOne({name:dad});
+
+   
+  console.log('dataabx ',dataabx);
+
+  const questionsAnswerws= dataabx.questionAnswer;
+    // const {question,answer}=questionsAnswerws;
+
+
+    res.json(questionsAnswerws)
+
+
+
+  
+  })
+
 
 
 

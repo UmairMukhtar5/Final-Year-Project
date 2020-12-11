@@ -42,7 +42,7 @@
     "socket.io-client": "^2.3.0"
   },
   "scripts": {
-    "start": "SET PORT=3001 && react-scripts start",
+    "start": "set PORT=3001 && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
@@ -51,5 +51,12 @@
   },
   "optionalDependencies": {
     "fsevents": "^2.2.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.0.20",
+    "babel-polyfill": "^6.0.16",
+    "babel-preset-es2015": "^6.0.15",
+    "babel-preset-stage-0": "^6.0.15",
+    "@babel/plugin-transform-runtime": "^7.12.1"
   }
 }

@@ -60,7 +60,7 @@ export default function SelectedListItem() {
           </ListItem>
         </NavLink>
 
-        {/* <NavLink to="/add">
+        <NavLink to="/add">
           <ListItem
             button
             selected={selectedIndex === 2}
@@ -72,7 +72,8 @@ export default function SelectedListItem() {
             <ListItemText primary="Start Stream" />
           </ListItem>
         </NavLink>
-        <NavLink to="/visualise">
+
+        <NavLink to="/otherplatform/instragram">
           <ListItem
             button
             selected={selectedIndex === 3}
@@ -81,10 +82,10 @@ export default function SelectedListItem() {
             <ListItemIcon>
               <VideoCallTwoToneIcon color="primary" style={{ fontSize: 35 }} />
             </ListItemIcon>
-            <ListItemText primary="View Stream" />
+            <ListItemText primary="Instagram stream" />
           </ListItem>
         </NavLink>
- */}
+ 
         <Divider></Divider>
 
         <Link to="/createstream/">

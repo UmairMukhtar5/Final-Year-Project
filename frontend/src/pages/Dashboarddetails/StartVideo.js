@@ -6,42 +6,85 @@ import StarIcon from "@material-ui/icons/Star";
 import IconButton from "@material-ui/core/IconButton";
 import { GooSpinner } from "react-spinners-kit";
 import { WhisperSpinner } from "react-spinners-kit";
+import QuestionAnsBox from './QuestionAnsCard';
+import TransitEnterexitIcon from '@material-ui/icons/TransitEnterexit';
+import Dictaphone1 from './VoiceToMessge';
+import axios from 'axios'
 
 class StartVideo extends Component {
   constructor(props) {
+    
     super(props);
     this.state = {
+      message:'',
       queries: [
+
       ],
       streamname: "",
+      question:"",
       answer: "",
+      Editclick:false
+
 
     };
 
+
     var handleToUpdate = this.handleToUpdate.bind(this);
+    // this.getData = this.getData.bind(this);
   }
+
+  
+  handelclick=(data)=>{
+    console.log('is here is fata ',data);
+    this.setState({...this.state, question: data });
+
+  }
+
   handleToUpdate(someArg) {
     alert('We pass argument from Child to Parent: ' + someArg);
     this.setState({ answer: someArg });
   }
+
+  getData=(message)=>{
+    this.setState({...this.state,answer:message})
+  }
   componentDidMount() {
+    
 
 
-    this.streamFunc();
+    // this.streamFunc();
+    console.log('here we go sir');
+
     if (localStorage.getItem("streamname")) {
       this.setState({ streamname: localStorage.getItem("streamname") });
-      console.log(this.state.streamname);
-
+console.log('here is if');
       // requests the server to access thsi stream so we can take out queries and display
-      fetch("http://localhost:3000/streamings/getstream/" + localStorage.getItem("streamname"))
-        .then((response) => response.json())
-        .then((data) => this.setState({ queries: data[0].allqueries }));
+      axios.get("http://localhost:3000/streamings/getstream/"+localStorage.getItem("streamname"))
+        .then((response) =>{
+          console.log('response ',response.data[0].process_comments);
+          if(response.data[0].process_comments){
 
-    }
+            // console.log(response.data.process_comments);
+
+        this.setState({ queries: response.data[0].process_comments });
 
 
+          }else{
+        this.setState({ message:'no query found'  });
 
-  }
+
+          }
+        })
+        
+
+    }else{console.log('no stream name found');}
+
+}
+
+
+ halegetquestionvalue=(value)=>{
+  this.setState({...this.state, question: value,Editclick:false });
+ }
 
   streamFunc = () => {
     const socket = io.connect("http://localhost:4001");
@@ -68,6 +111,8 @@ class StartVideo extends Component {
       }
       message("Camera connected");
     }
+
+
 
     function loadFail() {
       message("Camera not connected");
@@ -114,8 +159,29 @@ class StartVideo extends Component {
   }
 
 
+  clearAllfieldhandeler=()=>{
+    this.setState({...this.state,question:"",
+    answer: "", });
+
+  
+
+
+  }
+
+  handlesendDataqueseio=()=>{
+    this.setState({...this.state,Editclick:true});
+
+  
+  
+
+  }
+
+
+
+
   printQuestions() {
-    if (this.state.queries.length == 0) {
+    if(this.state.message) return 'no ans are provided'
+    if (this.state.queries.length === 0) {
       return (
         <div
           style={{
@@ -149,7 +215,7 @@ class StartVideo extends Component {
     } else {
       return this.state.queries.map((data, key) => {
         return (
-          <div>
+          <div key={key} >
             <div
               style={{
                 display: "flex",
@@ -159,7 +225,11 @@ class StartVideo extends Component {
                 borderRadius: 10,
                 padding: "3%",
                 marginBottom: "2%",
+              
               }}
+              onClick={()=> this.handelclick(data)}
+              className="justforhover"
+
             >
               <div
                 style={{
@@ -179,8 +249,12 @@ class StartVideo extends Component {
                   marginLeft: "2%",
                   marginTop: 8,
                 }}
+             
+
               >
-                <p style={{ textAlign: "left", color: "white", fontSize: 12 }}>
+                <p 
+                
+                style={{ textAlign: "left", color: "white", fontSize: 12 }}>
                   {data}
                 </p>
               </div>
@@ -195,14 +269,25 @@ class StartVideo extends Component {
                     style={{ color: "red", fontSize: 30 }}
                   ></DeleteForeverIcon>
                 </IconButton>
+
+
               </div>
             </div>
+
           </div>
         );
       });
     }
   }
+
+
+
+
   render() {
+
+
+    console.log(this.state);
+
 
     return (
       <React.Fragment >
@@ -275,13 +360,39 @@ class StartVideo extends Component {
                   {" "}
                   Most Important Queries !{" "}
                 </h1>
+
               </div>
               <div style={{}}>{this.printQuestions()}</div>
+           
             </div>
+          
+          
           </div>
           <canvas style={{ display: "none" }} id="preview"></canvas>
+          <QuestionAnsBox
+            question={this.state.question}
+            answer={this.state.answer}
+            textfiledchange={this.state.Editclick}
+            getquestionvalue={this.halegetquestionvalue}
+            />
+       
+           
         </div>
-      </React.Fragment>
+        <Dictaphone1
+        sendData={this.getData}
+        question={this.state.question}
+        clearAllfield={this.clearAllfieldhandeler}
+        sendDataqueseio={this.handlesendDataqueseio}
+      
+        />
+       
+    
+ 
+
+
+        </React.Fragment>
+    
+   
     );
   }
 }
