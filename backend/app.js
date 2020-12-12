@@ -11,6 +11,7 @@ var usersRouter = require("./routes/users");
 var streamings = require("./routes/streamings");
 var othersPlatform = require("./routes/othersPlatform");
 var othersPlatform2 = require("./routes/othersPlatform2");
+var othersPlatform3 = require("./routes/othersPlatform3");
 
 var neww = require("./routes/new");
 
@@ -64,7 +65,7 @@ app.use("/streamings", streamings);
 app.use("/users", usersRouter);
 app.use("/othersPlatform", othersPlatform);
 app.use("/othersPlatform2", othersPlatform2);
-
+app.use("/othersPlatform3", othersPlatform3);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

@@ -11,6 +11,8 @@ import axios from "axios";
 // import FusionCharts from './Fusionchart';
 
 const API = "http://localhost:3000/othersPlatform";
+const API2 = "http://localhost:3000/othersPlatform3";
+
 
 class OthersPlatform extends Component {
   
@@ -21,7 +23,8 @@ class OthersPlatform extends Component {
       youtube: "",
       queries: [],
       error:false,
-      click:false
+      click:false,
+      disable:'a'
     };
 
     this.onChange = this.onChange.bind(this);
@@ -36,26 +39,56 @@ class OthersPlatform extends Component {
   };
 
   onClick = async () => {
+
+    await this.setState({...this.state,disable:'b'})
+
+    setTimeout(async() => {
+    await this.setState({...this.state,disable:'c'})
+      
+    }, 10000);
+
+    const { youtube } = this.state;
+
+    const resposive=await axios.post(API,{youtube});
+    this.setState({ ...this.state,youtube:''});
+    
+  };
+
+  handlequeriesclick=async ()=>{
+
     this.setState({ error: false,click:'uncomplete'});
 
     const { youtube } = this.state;
-    const resposive=await axios.post(API,{youtube})
+    const resposive = await axios.post(API2+'/button',{youtube})
     console.log(resposive.data.result);
     if(resposive.data.result){
-      this.setState({ queries: resposive.data.result, youtube: '' ,click:'complete'});
-
-  
+      this.setState({ queries: resposive.data.result, click:'complete'});
 
     }else{
       this.setState({ error: true,click:false});
-
-
     }
+  }
+  queryfetch=()=>{
+    if(this.state.disable==='a'){
+      return null
+    }else if(this.state.disable==='b'){
+      return 'fetch queries'
 
-   
+    }else if(this.state.disable==='c'){
 
-    
-  };
+        return  <Button
+          onClick={this.handlequeriesclick}
+          color='primary'
+          margin='normal'
+          style={{
+            margin:'1rem'
+          }}
+          variant='contained'
+
+          >Get all comments</Button>
+    }
+  }
+
 
   setArray(key) {
     var newA = this.state.queries;
@@ -65,8 +98,8 @@ class OthersPlatform extends Component {
   }
 
   printQuestions() {
-  if(this.state.error) return <div>{'not data fouund for that query'}</div>
-  if(!this.state.click) return <div>{'Enter url to to get queries'}</div>
+  if(this.state.error) return <div>{'Not data found for that query'}</div>
+  if(!this.state.click) return <div>{'Enter URL to get queries'}</div>
 
     if (this.state.click==='uncomplete') {
       return (
@@ -286,6 +319,7 @@ class OthersPlatform extends Component {
                   Most Important Queries !{" "}
               </h1>
             </div>
+          {this.queryfetch()}
             <div style={{}}>{this.printQuestions()}</div>
           </div>
 

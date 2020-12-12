@@ -1,0 +1,22 @@
+2020-12-12 12:02:50,634 - instabot version: 0.117.0 (bot) - INFO - Instabot version: 0.117.0 Started
+2020-12-12 12:02:50,642 - instabot version: 0.117.0 (bot) - DEBUG - Bot imported from C:\Users\Computer\AppData\Local\Programs\Python\Python37-32\lib\site-packages\instabot\bot\bot.py
+2020-12-12 12:02:50,646 - instabot version: 0.117.0 (api_login) - DEBUG - Loading cookies
+2020-12-12 12:02:50,648 - instabot version: 0.117.0 (api_login) - DEBUG - Loading uuids
+2020-12-12 12:02:50,649 - instabot version: 0.117.0 (api_login) - INFO - Recovery from F:\Final-Year-Project\backend/config/iamsheza5_uuid_and_cookie.json: COOKIE True - UUIDs True - TIMING, DEVICE and ...
+- user-agent=Instagram 117.0.0.28.123 Android (28/9.0; 420dpi; 1080x1920; OnePlus; ONEPLUS A3003; OnePlus3; qcom; en_US; 180322800)
+- phone_id=fb9ffccb-e1c8-43bd-aa56-aff09df1f29a
+- uuid=c787fc43-2dd9-426f-bc41-b2ab0a370a7a
+- client_session_id=cda5f599-e32c-4a8c-88fe-65d0abbc81fb
+- device_id=android-0d418da884b5fafe
+2020-12-12 12:02:50,664 - instabot version: 0.117.0 (api_login) - INFO - LOGIN FLOW! Just logged-in: False
+2020-12-12 12:02:53,718 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: feed/timeline/ returned response: <Response [200]>
+2020-12-12 12:02:54,339 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: feed/reels_tray/ returned response: <Response [200]>
+2020-12-12 12:02:54,375 - instabot version: 0.117.0 (api) - INFO - Logged-in successfully as 'iamsheza5'!
+2020-12-12 12:02:54,407 - instabot version: 0.117.0 (bot_checkpoint) - DEBUG - Loading Checkpoint file from: F:\Final-Year-Project\backend/config/iamsheza5.checkpoint
+2020-12-12 12:02:55,058 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: media/2458139784537169062/comments/ returned response: <Response [200]>
+2020-12-12 12:02:55,691 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: media/2458139784537169062/comments/?max_id={"server_cursor": "QVFDc2EzS1ZBblpJUGpDMWQ0b1hoNGlhTlU3RmJWTEIxMXBxa19WcXZGU0xrVGJqdGZEc0R6Zjd1TS1QZnVCczN3c1RZNGxuUk9CeUstaTJ4c1FQNnlILQ==", "is_server_cursor_inverse": false} returned response: <Response [200]>
+2020-12-12 12:02:56,436 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: media/2458139784537169062/comments/?max_id={"server_cursor": "QVFCYU1UVjRNVkV4V1ZudEZyOS1nZ3ZxTGp1aUt5RElYaUtkb19JZjdBLU5VOFRseHo4LVhrOUV6bXdXUDRmbFJxa0tQLXE1NFY4dF9jRGFVMWtVNXNZSA==", "is_server_cursor_inverse": false} returned response: <Response [200]>
+2020-12-12 12:02:57,094 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: media/2458139784537169062/comments/?max_id={"server_cursor": "QVFEOV9Za2NnX3ZyYkxKeXJndzByT21rTU82MVVYa2REb2RmMTRVMkNuc2dTMXd1YjEzdFoxMXVDQjN0eVVITE85Q18xRkd0b1BHQURaQWZ4NTV6M1Q3SQ==", "is_server_cursor_inverse": false} returned response: <Response [200]>
+2020-12-12 12:02:57,757 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: media/2458139784537169062/comments/?max_id={"server_cursor": "QVFCV3o5d21zLXIyeWFsZ09ocjhqcWdHSHk0d3oweFB5aXhsdVc1d0FpS2Nwb2hNMTZCOTlFSnNhNUhBWFhmODVSZkpuOUZEZm5mQ1ZsM3dvVksxTkFaUg==", "is_server_cursor_inverse": false} returned response: <Response [200]>
+2020-12-12 12:02:58,381 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: media/2458139784537169062/comments/?max_id={"server_cursor": "QVFBejhZUzJ1RjJJQzJQNzRMaDZhQThoOWVmcEtIbTZ1d3lLYTJYVzNLMGZRS2w1Y282UzNXdkMtVzQtLWFSTl94VWlhcHZzTXd5MGl1Z2xMeF9FRHVIRw==", "is_server_cursor_inverse": false} returned response: <Response [200]>
+2020-12-12 12:02:59,010 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: media/2458139784537169062/comments/?max_id={"server_cursor": "QVFDd2xIXzhITE1QU0RIN3ZjUktHcGxxU1ZUZjYyMkZkZ0VxQnA5ZGZLem5sZS1wcGVsd3FYVUdkOTVmY085cmwzX0JsSzJLUGJJRE1xMndQZXFhNnNPVA==", "is_server_cursor_inverse": false} returned response: <Response [200]>

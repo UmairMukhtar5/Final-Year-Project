@@ -2,18 +2,23 @@ import React from 'react';
 import {Box, Divider,List,ListItem,ListItemText,Paper} from '@material-ui/core'
 
 const QuestionAnsCard=({question,answer,index}) =>{
+  
     
     return (
+        <Box borderRadius={20}>
 
-<Paper elevation={3} >
-        <Box border={1} borderColor={index%2==0 ? "primary.main":"secondary.main"}>
+<Paper elevation={5}>
             
         <List>
 
         <ListItem text style={{
             fontSize: '1.5rem'
         }}>
-        <ListItemText primary="Question:" />
+        <ListItemText primary={<strong
+        style={{
+            fontSize:'bold'
+        }}
+        >Question:</strong>} />
         </ListItem>
 
         <ListItem text>
@@ -26,7 +31,11 @@ const QuestionAnsCard=({question,answer,index}) =>{
 
 
         <ListItem text>
-        <ListItemText primary="Answer:" />
+        <ListItemText primary={<strong
+        style={{
+            fontSize:'bold'
+        }}
+        >Answer:</strong>} />
         </ListItem>
 
         <ListItem text>
@@ -45,8 +54,8 @@ const QuestionAnsCard=({question,answer,index}) =>{
 
         </List>
 
-        </Box>
         </Paper>
+        </Box>
     )
 }
 

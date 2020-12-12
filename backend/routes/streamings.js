@@ -151,36 +151,37 @@ streamingRouter
   });
 
 
-
-
-
   streamingRouter
   .route("/getstream/:streamname")
   .get(async(req, res, next) => {
-    const streaming=await Streamings.find({ name: req.params.streamname });
-
+    const streaming=await Streamings.find({ name: req.params.streamname  });
+    if(streaming){
+      return res.send(streaming);
+    }else{
+       res.send(false)
+    }
 
     const stream = req.body.streamname;
-
-    console.log(stream)
 
     const spawn = require("child_process").spawn;
     // let youtubeUrl= 'https://www.youtube.com/watch?v=gjPCYfXJIQU';
   
-    const process1 = spawn("py", ["./StreamProcessing.py", stream]);
+    const process1 = spawn("py", ["./YouTubeProcessing.py", stream], {stdio: "inherit"});
   
-    process1.stdout.on("data", (data) => {
+    process1.on("data", (data) => {
       console.log(data.toString());
-      res.status(200).json({ msg: data.toString() });
+      res.status(200).json({ msg: data.toString()});
     });
   
-    res.status(200).json({ msg: "a message" });
-
-  console.log('dsa ',streaming[0]);
-  res.send(streaming);
-  
-  // res.send(false)
-     
+    process1.on('close', function(code) {
+      if ( code === 1 ){
+          process.stderr.write("error occured",code);
+          process.exit(1);
+      }
+      else{
+          process.stdout.write('"python script exited with code: ' + code + '\n');
+      }   
+    })
   })
 
 

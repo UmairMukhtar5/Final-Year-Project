@@ -7,8 +7,8 @@ import IconButton from "@material-ui/core/IconButton";
 import { GooSpinner } from "react-spinners-kit";
 import { WhisperSpinner } from "react-spinners-kit";
 import QuestionAnsBox from './QuestionAnsCard';
-import TransitEnterexitIcon from '@material-ui/icons/TransitEnterexit';
 import Dictaphone1 from './VoiceToMessge';
+import {Button} from '@material-ui/core';
 import axios from 'axios'
 
 class StartVideo extends Component {
@@ -17,13 +17,12 @@ class StartVideo extends Component {
     super(props);
     this.state = {
       message:'',
-      queries: [
-
-      ],
+      queries:[],
       streamname: "",
       question:"",
       answer: "",
-      Editclick:false
+      Editclick:false,
+      fetcclick:true
 
 
     };
@@ -48,28 +47,44 @@ class StartVideo extends Component {
   getData=(message)=>{
     this.setState({...this.state,answer:message})
   }
-  componentDidMount() {
-    
 
 
-    // this.streamFunc();
-    console.log('here we go sir');
+
+  fetchqueriesclick=()=>{
+    // fetcclick
+    this.setState({ ...this.state,fetcclick:false});
+
+    console.log('insta is workdf');
+
+
 
     if (localStorage.getItem("streamname")) {
       this.setState({ streamname: localStorage.getItem("streamname") });
-console.log('here is if');
+      console.log('here is if');
       // requests the server to access thsi stream so we can take out queries and display
       axios.get("http://localhost:3000/streamings/getstream/"+localStorage.getItem("streamname"))
         .then((response) =>{
-          console.log('response ',response.data[0].process_comments);
-          if(response.data[0].process_comments){
+          console.log('response ',response);
+          if(!!response.data[0] && !!response.data[0].process_comments){
+            if(!!response.data[0].process_comments.length!==0){
 
+            console.log('if ');
             // console.log(response.data.process_comments);
 
-        this.setState({ queries: response.data[0].process_comments });
+            this.setState({ queries: response.data[0].process_comments });
+
+
+            }else{
+
+              this.setState({ message:'no query found'  });
+      
+            }
+          
 
 
           }else{
+
+
         this.setState({ message:'no query found'  });
 
 
@@ -78,6 +93,13 @@ console.log('here is if');
         
 
     }else{console.log('no stream name found');}
+
+  }
+
+  componentDidMount() {
+ console.log('here we go sir');
+
+  
 
 }
 
@@ -176,43 +198,74 @@ console.log('here is if');
 
   }
 
+//   handelfetxhdataclick=()=>{
+//     if (localStorage.getItem("streamname")) {
+//       this.setState({ streamname: localStorage.getItem("streamname") });
+
+// console.log('here is if');
+
+//       // requests the server to access thsi stream so we can take out queries and display
+//       axios.get("http://localhost:3000/streamings/getstream/button"+localStorage.getItem("streamname"))
+//         .then((response) =>{
+//           console.log('response ',response.data[0].process_comments);
+//           if(response.data[0]){
+
+//             // console.log(response.data.process_comments);
+
+//         this.setState({ queries: response.data[0].process_comments });
+
+
+//           }else{
+//         this.setState({ message:'no query found'  });
+
+
+//           }
+//         })
+        
+
+//     }else{console.log('no stream name found');}
+
+//   }
+
 
 
 
   printQuestions() {
-    if(this.state.message) return 'no ans are provided'
-    if (this.state.queries.length === 0) {
-      return (
-        <div
-          style={{
-            justifyContent: "center",
-            textAlign: "center",
-          }}
-        >
-          <div
-            style={{
-              paddingLeft: "40%",
-              paddingTop: "15%",
-              paddingBottom: "0%",
-            }}
-          >
-            <WhisperSpinner size={120} color="yellow"></WhisperSpinner>
-          </div>
+    if(this.state.fetcclick) return null;
+    if (this.state.queries.length===0 &&   !this.state.fetcclick) return 'no comment found'
+    // if (this.state.queries.length===0) {
+    //   return (
+    //     <div
+    //       style={{
+    //         justifyContent: "center",
+    //         textAlign: "center",
+    //       }}
+    //     >
+    //       <div
+    //         style={{
+    //           paddingLeft: "40%",
+    //           paddingTop: "15%",
+    //           paddingBottom: "0%",
+    //         }}
+    //       >
+    //         <WhisperSpinner size={120} color="yellow"></WhisperSpinner>
+    //       </div>
 
-          <h1
-            style={{
-              fontFamily: "Roboto",
-              color: "#4A96BA",
-              fontWeight: "bolder",
-              marginTop: "14%",
-            }}
-          >
-            {" "}
-            PROCESSING QUERIES ...{" "}
-          </h1>
-        </div>
-      );
-    } else {
+    //       <h1
+    //         style={{
+    //           fontFamily: "Roboto",
+    //           color: "#4A96BA",
+    //           fontWeight: "bolder",
+    //           marginTop: "14%",
+    //         }}
+    //       >
+    //         {" "}
+    //         PROCESSING QUERIES ...{" "}
+    //       </h1>
+    //     </div>
+    //   );
+    // } 
+    if (this.state.queries.length!==0) {
       return this.state.queries.map((data, key) => {
         return (
           <div key={key} >
@@ -358,11 +411,23 @@ console.log('here is if');
                   }}
                 >
                   {" "}
-                  Most Important Queries !{" "}
+                  Most Important Queries jkfhdks!{" "}
+                  <Button
+                  onClick={this.fetchqueriesclick}
+                  >
+                    Fetch All Quries
+                  </Button>
                 </h1>
-
+                  
               </div>
-              <div style={{}}>{this.printQuestions()}</div>
+              
+              <div style={{}}>
+
+             
+                
+                {this.printQuestions()}
+                
+                </div>
            
             </div>
           

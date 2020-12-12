@@ -2,27 +2,23 @@ const express = require("express");
 const app = express.Router();
 
 
-app.get("/", function (req, res) {
-  console.log("hello");
+// app.get("/", function (req, res) {
+//   console.log("hello");
 
-  const youtubeUrl = req.body.youtube;
+//   const youtubeUrl = req.body.youtube;
 
-  const spawn = require("child_process").spawn;
-  // let youtubeUrl= 'https://www.youtube.com/watch?v=gjPCYfXJIQU';
+//   const spawn = require("child_process").spawn;
+//   // let youtubeUrl= 'https://www.youtube.com/watch?v=gjPCYfXJIQU';
 
-  const process1 = spawn("py", ["./youtube.py", youtubeUrl]);
+//   const process1 = spawn("py", ["./youtube.py", youtubeUrl]);
 
-  process1.stdout.on("data", (data) => {
-    console.log(data.toString());
-    res.status(200).json({ msg: data.toString() });
-  });
+//   process1.stdout.on("data", (data) => {
+//     console.log(data.toString());
+//     res.status(200).json({ msg: data.toString() });
+//   });
 
-  res.status(200).json({ msg: "a message" });
-});
-
-
-
-
+//   res.status(200).json({ msg: "a message" });
+// });
 
 app.post("/", function (req, res) {
   console.log("hello");
@@ -33,7 +29,7 @@ app.post("/", function (req, res) {
   const spawn = require("child_process").spawn;
   // let youtubeUrl= 'https://www.youtube.com/watch?v=gjPCYfXJIQU';
 
-  const process1 = spawn("py", ["./youtube.py", youtubeUrl], {stdio: "inherit"});
+  const process1 = spawn("py", ["./insta.py", youtubeUrl], {stdio: "inherit"});
 
   process1.on("data", (data) => {
     console.log(data.toString());
@@ -52,9 +48,5 @@ app.post("/", function (req, res) {
 
   // res.status(200).json({ msg: "a message" });
 });
-
-
-
-
 
 module.exports = app;
