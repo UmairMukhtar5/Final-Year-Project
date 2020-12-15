@@ -213,14 +213,22 @@ client = MongoClient('mongodb+srv://umair:12345@cluster0.hgkkb.mongodb.net/<dbna
 db = client.get_database('importextdb')
 comments = db.streamings
 
+comments.update({'name' : url},{ '$set' : {'process_comments': []}})
+
 document = comments.find({'name': url})
 
 for data in document[0]['allqueries']:
     print(data)
     addToList(data)
 
-print("This is sorted array")
 
+
+
+print("This is unsorted array")
+
+print(*boxes, sep = "\n")
+
+print("This is sorted array")
 boxes = sorted(boxes, key=lambda x: x[1], reverse=True)
 print(*boxes, sep = "\n")
 incre = 1

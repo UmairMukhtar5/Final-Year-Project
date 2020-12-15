@@ -228,7 +228,7 @@ incre = 1
 for x in boxes:
     comments.find_one_and_update({'URL' : url},{ '$push' : {'process_comments': x[0]}})
     print(x[0])
-    if(incre == 5):
+    if(incre == 10):
         break
     incre += 1
 

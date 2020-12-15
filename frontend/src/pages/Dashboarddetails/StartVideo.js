@@ -36,7 +36,6 @@ class StartVideo extends Component {
   handelclick=(data)=>{
     console.log('is here is fata ',data);
     this.setState({...this.state, question: data });
-
   }
 
   handleToUpdate(someArg) {
@@ -97,9 +96,8 @@ class StartVideo extends Component {
   }
 
   componentDidMount() {
+    this.streamFunc();
  console.log('here we go sir');
-
-  
 
 }
 
@@ -185,8 +183,6 @@ class StartVideo extends Component {
     this.setState({...this.state,question:"",
     answer: "", });
 
-  
-
 
   }
 
@@ -232,7 +228,7 @@ class StartVideo extends Component {
 
   printQuestions() {
     if(this.state.fetcclick) return null;
-    if (this.state.queries.length===0 &&   !this.state.fetcclick) return 'no comment found'
+    if (this.state.queries.length===0 &&   !this.state.fetcclick) return 'No Comment Found'
     // if (this.state.queries.length===0) {
     //   return (
     //     <div
@@ -411,7 +407,8 @@ class StartVideo extends Component {
                   }}
                 >
                   {" "}
-                  Most Important Queries jkfhdks!{" "}
+                  Most Important Queries!{"              "}
+                  <br></br>
                   <Button
                   onClick={this.fetchqueriesclick}
                   >

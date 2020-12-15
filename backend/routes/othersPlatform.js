@@ -29,7 +29,7 @@ app.post("/", function (req, res) {
   const spawn = require("child_process").spawn;
   // let youtubeUrl= 'https://www.youtube.com/watch?v=gjPCYfXJIQU';
 
-  const process1 = spawn("py", ["./insta.py", youtubeUrl], {stdio: "inherit"});
+  const process1 = spawn("py", ["./youtube.py", youtubeUrl], {stdio: "inherit"});
 
   process1.on("data", (data) => {
     console.log(data.toString());
