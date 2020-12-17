@@ -97,7 +97,52 @@ class StartVideo extends Component {
 
   componentDidMount() {
     this.streamFunc();
- console.log('here we go sir');
+    
+    
+    this.setState({ ...this.state,fetcclick:false});
+
+    console.log('insta is workdf');
+   
+   
+   
+    if (localStorage.getItem("streamname")) {
+      this.setState({ streamname: localStorage.getItem("streamname") });
+      console.log('here is if');
+      // requests the server to access thsi stream so we can take out queries and display
+      axios.get("http://localhost:3000/streamings/getstream/"+ localStorage.getItem("streamname"))
+        .then((response) =>{
+          console.log('response ',response.data);
+          if(!!response.data[0]){
+            if(response.data[0].allqueries.length!==0){
+   
+            console.log('if ');
+            // console.log(response.data.process_comments);
+   
+            this.setState({ queries: response.data[0].allqueries });
+   
+   
+            }else{
+   
+              this.setState({ message:'no query found'  });
+      
+            }
+          
+   
+   
+          }else{
+   
+   
+        this.setState({ message:'no query found'  });
+   
+   
+          }
+        })
+        
+   
+    }else{  this.setState({ message:'no stream name found'  });
+    
+   }
+ //console.log('here we go sir');
 
 }
 
@@ -412,7 +457,7 @@ class StartVideo extends Component {
                   <Button
                   onClick={this.fetchqueriesclick}
                   >
-                    Fetch All Quries
+                    Process Queries
                   </Button>
                 </h1>
                   

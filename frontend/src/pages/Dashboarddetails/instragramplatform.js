@@ -256,7 +256,7 @@ class OthersPlatform extends Component {
                 }}
               >
                 {" "}
-              Insta Link
+              YouTube Video URL
             </h3>
             </div>
 

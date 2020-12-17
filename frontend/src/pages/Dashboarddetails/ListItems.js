@@ -82,7 +82,7 @@ export default function SelectedListItem() {
             <ListItemIcon>
               <VideoCallTwoToneIcon color="primary" style={{ fontSize: 35 }} />
             </ListItemIcon>
-            <ListItemText primary="Instagram stream" />
+            <ListItemText primary="YouTube Video Processing" />
           </ListItem>
         </NavLink>
  
@@ -129,7 +129,7 @@ export default function SelectedListItem() {
                 style={{ fontSize: 35 }}
               />{" "}
             </ListItemIcon>
-            <ListItemText primary="Youtube Stream " />
+            <ListItemText primary="Youtube Live Processing " />
           </ListItem>
         </NavLink>
       </List>

@@ -9,9 +9,6 @@ const Server = require('mongodb').Server,
   url = 'mongodb+srv://umair:12345@cluster0.hgkkb.mongodb.net/<dbname>?retryWrites=true&w=majority'
 
 
-
-
-
 // const sdfksd=MongoClient(url);
 
 
@@ -24,7 +21,7 @@ app.post("/instra/button", async (req, res) => {
   const spawn = require("child_process").spawn;
   // let youtubeUrl= 'https://www.youtube.com/watch?v=gjPCYfXJIQU';
 
-  const process1 = spawn("py", ["./instaProcessing.py", youtubeUrl], { stdio: "inherit" });
+  const process1 = spawn("python", ["./YouTubeVideoProcess.py", youtubeUrl], { stdio: "inherit" });
 
   process1.on("data", (data) => {
     console.log(data.toString());
@@ -83,7 +80,7 @@ app.post("/instra", async (req, res) => {
   const spawn = require("child_process").spawn;
   // let youtubeUrl= 'https://www.youtube.com/watch?v=gjPCYfXJIQU';
 
-  const process1 = spawn("py", ["./insta.py", youtubeUrl], { stdio: "inherit" });
+  const process1 = spawn("python", ["./Scrape YouTube.py", youtubeUrl], { stdio: "inherit" });
 
   process1.on("data", (data) => {
     console.log(data.toString());

@@ -1,0 +1,11 @@
+2020-12-17 08:44:09,251 - instabot version: 0.117.0 (bot) - INFO - Instabot version: 0.117.0 Started
+2020-12-17 08:44:09,251 - instabot version: 0.117.0 (bot) - DEBUG - Bot imported from C:\Users\Computer\AppData\Local\Programs\Python\Python37-32\lib\site-packages\instabot\bot\bot.py
+2020-12-17 08:44:09,253 - instabot version: 0.117.0 (api_login) - DEBUG - Loading cookies
+2020-12-17 08:44:09,253 - instabot version: 0.117.0 (api_login) - DEBUG - Loading uuids
+2020-12-17 08:44:09,254 - instabot version: 0.117.0 (api_login) - INFO - Recovery from F:\Final-Year-Project\backend/config/iamsheza5_uuid_and_cookie.json: COOKIE True - UUIDs True - TIMING, DEVICE and ...
+- user-agent=Instagram 117.0.0.28.123 Android (28/9.0; 420dpi; 1080x1920; OnePlus; ONEPLUS A3003; OnePlus3; qcom; en_US; 180322800)
+- phone_id=fb9ffccb-e1c8-43bd-aa56-aff09df1f29a
+- uuid=c787fc43-2dd9-426f-bc41-b2ab0a370a7a
+- client_session_id=533c0c44-0d69-491a-a679-edf50785e0ef
+- device_id=android-0d418da884b5fafe
+2020-12-17 08:44:09,262 - instabot version: 0.117.0 (api_login) - INFO - LOGIN FLOW! Just logged-in: False

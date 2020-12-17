@@ -1,0 +1,27 @@
+2020-12-17 08:42:16,700 - instabot version: 0.117.0 (bot) - INFO - Instabot version: 0.117.0 Started
+2020-12-17 08:42:16,701 - instabot version: 0.117.0 (bot) - DEBUG - Bot imported from C:\Users\Computer\AppData\Local\Programs\Python\Python37-32\lib\site-packages\instabot\bot\bot.py
+2020-12-17 08:42:16,702 - instabot version: 0.117.0 (api_login) - DEBUG - Loading cookies
+2020-12-17 08:42:16,702 - instabot version: 0.117.0 (api_login) - DEBUG - Loading uuids
+2020-12-17 08:42:16,702 - instabot version: 0.117.0 (api_login) - INFO - Recovery from F:\Final-Year-Project\backend/config/iamsheza5_uuid_and_cookie.json: COOKIE True - UUIDs True - TIMING, DEVICE and ...
+- user-agent=Instagram 117.0.0.28.123 Android (28/9.0; 420dpi; 1080x1920; OnePlus; ONEPLUS A3003; OnePlus3; qcom; en_US; 180322800)
+- phone_id=fb9ffccb-e1c8-43bd-aa56-aff09df1f29a
+- uuid=c787fc43-2dd9-426f-bc41-b2ab0a370a7a
+- client_session_id=533c0c44-0d69-491a-a679-edf50785e0ef
+- device_id=android-0d418da884b5fafe
+2020-12-17 08:42:16,703 - instabot version: 0.117.0 (api_login) - INFO - LOGIN FLOW! Just logged-in: False
+2020-12-17 08:42:18,443 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: feed/timeline/ returned response: <Response [403]>
+2020-12-17 08:42:18,443 - instabot version: 0.117.0 (api) - DEBUG - Responsecode indicates error; response content: b'{"message": "login_required", "error_title": "You\'ve Been Logged Out", "error_body": "Please log back in.", "logout_reason": 8, "status": "fail"}'
+2020-12-17 08:42:18,443 - instabot version: 0.117.0 (api) - ERROR - Request returns 403 error!
+2020-12-17 08:42:22,054 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: feed/reels_tray/ returned response: <Response [403]>
+2020-12-17 08:42:22,054 - instabot version: 0.117.0 (api) - DEBUG - Responsecode indicates error; response content: b'{"message": "login_required", "error_title": "You\'ve Been Logged Out", "error_body": "Please log back in.", "logout_reason": 8, "status": "fail"}'
+2020-12-17 08:42:22,054 - instabot version: 0.117.0 (api) - ERROR - Request returns 403 error!
+2020-12-17 08:42:22,054 - instabot version: 0.117.0 (api) - INFO - Login flow failed, the cookie is broken. Relogin again.
+2020-12-17 08:42:22,074 - instabot version: 0.117.0 (api_login) - DEBUG - Loading cookies
+2020-12-17 08:42:22,075 - instabot version: 0.117.0 (api_login) - DEBUG - Loading uuids
+2020-12-17 08:42:22,075 - instabot version: 0.117.0 (api_login) - INFO - Recovery from F:\Final-Year-Project\backend/config/iamsheza5_uuid_and_cookie.json: COOKIE True - UUIDs True - TIMING, DEVICE and ...
+- user-agent=Instagram 117.0.0.28.123 Android (28/9.0; 420dpi; 1080x1920; OnePlus; ONEPLUS A3003; OnePlus3; qcom; en_US; 180322800)
+- phone_id=fb9ffccb-e1c8-43bd-aa56-aff09df1f29a
+- uuid=c787fc43-2dd9-426f-bc41-b2ab0a370a7a
+- client_session_id=533c0c44-0d69-491a-a679-edf50785e0ef
+- device_id=android-0d418da884b5fafe
+2020-12-17 08:42:22,076 - instabot version: 0.117.0 (api_login) - INFO - Not yet logged in starting: PRE-LOGIN FLOW!
