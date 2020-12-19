@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import clsx from "clsx";
-
 import Avatar from "@material-ui/core/Avatar";
 import { makeStyles } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
@@ -63,6 +62,7 @@ const drawerWidth = 230;
 const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
+
   },
 
   toolbar: {
@@ -109,6 +109,7 @@ const useStyles = makeStyles((theme) => ({
       duration: theme.transitions.duration.enteringScreen,
     }),
   },
+
   drawerPaperClose: {
     overflowX: "hidden",
     transition: theme.transitions.create("width", {
