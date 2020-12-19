@@ -1,0 +1,139 @@
+armaments
+A-bomb
+arms
+arrow
+ammunition
+atom bomb
+assault rifle
+atomic bomb
+autocannon
+ammo
+automatic rifle
+axe
+ballista
+ballistic missile
+bat
+baton
+battle axe
+bayonet
+bazooka
+billy club
+biological weapon
+blackjack
+blade
+blaster
+blowgun
+blowpipe
+bludgeon
+bomb
+boobytrap
+boomerang
+bow and arrow
+Bowie knife
+brass knuckles
+bullet
+bullwhip
+cannon
+carbine
+cat o'nine tails
+catapult
+cleaver
+club
+crossbow
+cudgel
+cutlass
+dagger
+dart
+depth charge
+epee
+explosives
+firearm
+flail
+flamethrower
+flintlock
+foil
+Gatling gun
+grenade
+grenade launcher
+guided missile
+gun
+gunpowder
+halberd
+hand grenade
+handgun
+harpoon
+hatchet
+howitzer
+hunting knife
+javelin
+katana
+knife
+knout
+kris
+lance
+landmine
+longbow
+longsword
+mace
+machete
+machine gun
+magnum
+maul
+morning star
+missile
+mine
+mortar
+munitions
+musket
+mustard gas
+muzzleloader
+nerve gas
+night stick
+nuclear bomb
+nunchaku (nunchucks)
+onager
+ordnance
+peashooter
+pepper spray
+pickaxe
+pike
+pistol
+pommel
+quarterstaff
+rapier
+rifle
+revolver
+rocket
+rocket launcher
+saber
+scimitar
+scythe
+semiautomatic
+shell
+shooter
+shillelagh
+shotgun
+sickle
+slingshot
+spear
+spiked mace
+stiletto
+stun gun
+submachine gun
+switchblade
+sword
+tank
+tank gun
+taser
+tear gas
+tomahawk
+torpedo
+trebuchet
+trident
+tripwire
+Uzi
+truncheon
+weapon
+weapon of mass destruction
+weaponry
+whip

@@ -1,0 +1,299 @@
+airplane
+aircraft carrier
+amphibious vehicle
+armored car
+ambulance
+auto
+automobile
+aircraft
+aerial tramway
+baby carriage
+balloon
+barge
+barrow
+bathyscaphe
+battleship
+bicycle
+bike
+biplane
+blimp
+boat
+bobsled
+bomber
+boxcar
+broomstick
+buggy
+bulldozer
+bullet train
+bus
+cab
+cabin cruiser
+cable car
+caboose
+camper
+canoe
+car
+caravan
+caravel
+cargo ship
+carriage
+carrier
+cart
+catamaran
+chairlift
+clipper ship
+clunker
+coach
+combine
+compact car
+Conestoga wagon
+container ship
+convertible
+chopper
+conveyance
+chariot
+conveyor belt
+convoy
+coupe
+covered wagon
+crane
+crop duster
+cruise ship
+cruiser
+cutter
+cycle
+delivery truck
+delivery van
+destroyer
+diesel truck
+dinghy
+dirigible
+dirt bike
+diving bell
+dog cart
+dogsled
+donkey cart
+dray
+driver
+dugout canoe
+eighteen-wheeler
+electric car
+elevated railroad
+elevator
+engine
+escalator
+express train
+dump truck
+earth mover
+fireboat
+fishing boat
+flatbed truck
+forklift
+four-by-four
+four-door
+four-wheel drive
+freight train
+freighter
+fire engine
+ferry
+funicular railway
+galleon
+frigate
+garbage truck
+glider
+go-cart
+golf cart
+gondola
+gondola lift
+gridlock
+handcar
+hang glider
+hansom cab
+hardtop
+harvester
+hatchback
+haul
+hay wagon
+hearse
+helicopter
+hook and ladder truck
+hot rod
+hot-air balloon
+houseboat
+hovercraft
+hull
+Humvee
+hybrid
+hydrofoil
+hydroplane
+ice boat
+jalopy
+ice breaker
+jeep
+jet
+jet boat
+jet pack
+jet ski
+journey
+jetliner
+jumbo jet
+junk
+kayak
+ketch
+landing craft
+life raft
+lifeboat
+limo
+limousine
+litter
+locomotive
+light rail
+lorry
+low-rider
+magic carpet
+maglev
+mast
+minesweeper
+minibus
+model T
+monorail
+minivan
+moped
+motor
+motor home
+motorboat
+motorcar
+narrowboat
+motorcycle
+oar
+mountain bike
+ocean liner
+off-road vehicle
+oil tanker
+outboard motor
+outrigger canoe
+oxcart
+paddlewheeler
+parachute
+paddle
+passenger
+patrol car
+pedal boat
+pickup truck
+pilot
+plane
+power boat
+police car
+prairie schooner
+propeller
+PT boat
+pumper truck
+punt
+push cart
+racecar
+racing car
+raft
+ragtop
+railway
+railroad
+rapid transit
+recreational vehicle
+rickshaw
+ride
+riverboat
+roadster
+rocket
+rowboat
+rover
+rudder
+runabout
+RV
+sail
+sailboat
+satellite
+school bus
+schooner
+scull
+scooter
+seaplane
+sedan
+sedan chair
+Segway
+semi
+ship
+shuttle
+side wheeler
+ski lift
+ski tow
+skiff
+sled
+sledge
+sleigh
+snow cat
+snowmobile
+snowplow
+space shuttle
+spaceship
+speedboat
+sport-utility vehicle/SUV
+sports car
+squad car
+SST
+stagecoach
+station wagon
+steamboat
+stock car
+steamship
+stretch limo
+stroller
+subcompact
+submarine
+submersible
+subway
+surrey
+SUV
+T-bar lift
+tank
+tanker
+taxi
+taxicab
+thresher
+tire
+toboggan
+tow truck
+town car
+tracks
+tractor
+tractor-trailer
+trail bike
+trailer
+train
+tram
+tramway
+transit
+trawler
+tricycle
+trolley
+truck
+tugboat
+two-door
+U-boat
+ultralight craft
+umiak
+unicycle
+van
+vehicle
+vespa
+vessel
+wagon
+warship
+wheel
+wheelbarrow
+wheelchair
+windjammer
+windshield
+wreck
+yacht
+yawl
+Zamboni
+zeppelin

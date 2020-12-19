@@ -1,0 +1,99 @@
+addressee
+air mail
+advertisements
+adhesive
+book rate
+bulk mail
+buy
+canceled stamp
+circulars
+clerk
+code
+commemorative stamp
+communication
+confirm
+correspondence
+deliver
+delivery
+dispatch
+domestic
+drop
+envelope
+express
+fast
+first class
+address
+form
+foreign
+forward
+box
+from
+insurance
+international
+junk mail
+letter
+letterhead
+library rate
+magazine
+flat rate
+mail truck
+mailbox
+mailer
+mail carrier
+meter
+office
+media
+open
+ounce
+overnight
+overseas
+pack
+package
+packing
+paper
+parcel
+penpal
+periodical
+pickup
+PO box
+mail
+freight
+post office
+post office box
+postage
+postal carrier
+postal code
+postcard
+postmark
+pound
+priority
+post
+postmaster
+rate
+receipt
+recipient
+return address
+returned
+sack
+satchel
+seal
+send
+service
+ship
+special delivery
+stamp
+stamp machine
+tape
+stationery
+to
+truck
+uncanceled
+undeliverable
+unopened
+weigh
+weight
+wrap
+write
+ZIP code
+tracking
+zone

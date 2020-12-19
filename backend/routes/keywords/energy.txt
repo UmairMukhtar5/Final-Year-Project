@@ -1,0 +1,158 @@
+accumulator
+AC
+absorb
+alternating current
+anthracite coal
+appliance
+battery
+biofuel
+biomass
+biodiesel
+bituminous coal
+blackout
+boiler
+British thermal unit
+Btu
+carbon
+capacity
+carbon footprint
+carbon tax
+charcoal
+chemical energy
+clean energy
+climate change
+coal
+coke
+combustion
+conservation
+crude oil
+current
+dam
+DC
+diesel
+direct current
+drill
+dynamo
+efficiency
+efficient
+electric
+electrical
+electrical grid
+electromagnetic energy
+energy
+electron
+engineer
+engine
+entropy
+environment
+erg
+ethanol
+flywheel
+flexible fuel
+fossil fuel
+fuel
+fuel cell
+gas
+furnace
+gas-turbine
+gasoline
+generate
+generation
+generator
+global warming
+geothermal
+green
+green energy
+greenhouse effect
+greenhouse gas
+grid
+heat
+heat exchange
+high-voltage
+horsepower
+human-powered
+hydrocarbon
+hybrid
+hydrogen
+hydrothermal
+industry
+internal combustion engine
+inverter
+hydroelectric
+joule
+jet fuel
+Kelvin scale
+kilowatt-hour
+kinetic energy
+light
+liquefied petroleum gas
+magnetic energy
+megawatt
+methane
+methanol
+kilowatt
+motor
+natural gas
+mining
+nuclear energy
+nuclear power
+nuclear reactor
+nucleus
+off-the-grid
+nuclear
+oil
+peak oil
+peat
+petroleum
+oil rig
+photovoltaic
+photovoltaic panel
+pollution
+potential energy
+photon
+power grid
+power lines
+power plant
+power station
+power transmission
+propane
+public utility
+radiant
+power
+radiate
+reactor
+reciprocating engine
+reflect
+renewable
+reservoir
+shale
+solar power
+solar panel
+static electricity
+steam
+steam engine
+steam turbine
+sun
+sunlight
+sunshine
+sustainable
+temperature
+therm
+thermal energy
+thermodynamics
+tidal power
+transmission lines
+transmit
+turbine
+utilities
+volt
+waste
+wattage
+wind
+wave power
+wind farm
+wind power
+watt
+wind turbine
+windmill
+work

@@ -1,0 +1,198 @@
+airport terminal
+abbey
+apartment building
+amphitheater
+A-frame
+aircraft hangar
+aqueduct
+arch
+arena
+armory
+assembly hall
+barn
+barracks
+beach house
+boarding house
+bowling alley
+boathouse
+bridge
+brownstone
+building
+bungalow
+bunker
+bunkhouse
+cabana
+cabin
+capitol
+carport
+castle
+catacomb
+cathedral
+chalet
+chapel
+chateau
+church
+cinema
+city hall
+clubhouse
+college
+compound
+concert hall
+condominium
+conservatory
+cottage
+courthouse
+crypt
+depot
+detached house
+dock
+dome
+dormitory
+double wide
+duplex
+dwelling
+earth-sheltered house
+embassy
+exposition hall
+factory
+farm
+farmhouse
+ferry slip
+ferry terminal
+fire station
+firehouse
+forge
+folly
+fort
+fortress
+foundry
+gallery
+garage
+gas station
+gazebo
+geodesic dome
+granary
+greenhouse
+gym
+hall
+hangar
+gymnasium
+headquarters
+haunted house
+home
+high-rise
+hostel
+hospital
+hot house
+hotel
+houseboat
+housing project
+hunting lodge
+house
+hut
+kiosk
+laboratory
+jail
+igloo
+lean-to
+library
+lighthouse
+lodge
+log cabin
+mall
+longhouse
+manse
+mansion
+marina
+market
+manor
+mausoleum
+meeting hall
+mill
+minaret
+mobile home
+monastery
+mosque
+monument
+museum
+nuclear power plant
+nursing home
+observatory
+office building
+motel
+opera house
+outbuilding
+outhouse
+palace
+pagoda
+parking garage
+parliament
+pavilion
+plant
+playhouse
+police station
+pool house
+post office
+power plant
+prefab building
+prison
+pump house
+pyramid
+quonset hut
+railway station
+ranch
+rectory
+refinery
+residence
+restaurant
+roller rink
+roundhouse
+rowhouse
+school
+shack
+shed
+shelter
+shopping center
+shopping mall
+shrine
+silo
+skyscraper
+skating rink
+skyway
+smokestack
+spire
+split-level house
+stable
+stadium
+state house
+station
+steeple
+store
+storehouse
+strip mall
+studio
+structure
+supermarket
+symphony
+synagogue
+temple
+tenement
+tent
+terminal
+theater
+tipi
+toll house
+tomb
+tower
+treehouse
+townhouse
+triplex
+Tudor house
+university
+vault
+vicarage
+villa
+warehouse
+watermill
+workshop
+yurt

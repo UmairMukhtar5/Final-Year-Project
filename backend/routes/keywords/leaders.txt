@@ -1,0 +1,151 @@
+abbot
+admiral
+administrator
+archduchess
+aristocrat
+archduke
+authority
+autocrat
+baron
+baroness
+baronet
+baronetess
+bishop
+bey
+boss
+brass
+brigadier general
+caliph
+captain
+chair
+chairperson
+chairman
+chairwoman
+chief
+chieftain
+colonel
+commandant
+commander
+commodore
+consul
+controller
+count
+countess
+czar
+czarina
+dame
+dean
+despot
+dictator
+director
+disciplinarian
+doge
+duke
+don
+duchess
+earl
+elder
+emir
+eminence
+emperor
+empress
+excellency
+executive
+father
+feds
+field marshal
+general
+gentry
+governor
+grand duchess
+grand duke
+guru
+head
+head honcho
+head of state
+headmaster
+headmistress
+heir apparent
+high priest
+highness
+high rank
+honor
+imperator
+infanta
+infante
+judge
+khan
+king
+knight
+lady
+landed gentry
+leader
+lord
+majesty
+management
+manager
+master
+matriarch
+mayor
+minister
+mistress
+monarch
+mother
+nobility
+officer
+oligarch
+noble
+overlord
+pandit
+patriarch
+owner
+peer
+pilot
+police chief
+pope
+pharaoh
+powers that be
+premier
+president
+priest
+priestess
+prime minister
+prince
+princess
+provost
+principal
+queen
+raja
+rana
+rani
+rector
+regent
+representative
+royals
+royalty
+ruler
+sahib
+senator
+shah
+sheik
+shogun
+sir
+skipper
+sovereign
+sri
+sultan
+superintendent
+supervisor
+swami
+top brass
+top dog
+tsar
+tsarina
+tycoon
+tyrant
+vice-president
+vidya
+VIP
+viscount
+viscountess
+vizier

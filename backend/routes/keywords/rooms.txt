@@ -1,0 +1,123 @@
+armory
+attic
+assembly room
+anteroom
+backroom
+ballroom
+basement
+bathroom
+bedroom
+boardroom
+boiler room
+boudoir
+breakfast nook
+breakfast room
+cabin
+cell
+chamber
+cellar
+changing room
+chapel
+clean room
+classroom
+cloakroom
+cold room
+common room
+conference room
+conservatory
+control room
+courtroom
+cubby
+darkroom
+den
+dining room
+dormitory
+drawing room
+dressing room
+emergency room
+engine room
+family room
+formal dining room
+foyer
+front room
+game room
+garage
+garret
+great room
+green room
+grotto
+guest room
+gym
+hall
+hallway
+homeroom
+hospital room
+hotel room
+inglenook
+dungeon
+jail cell
+fitting room
+kitchenette
+ladies' room
+larder
+laundry room
+library
+living room
+lobby
+locker room
+loft
+lounge
+lunchroom
+maid's room
+mailroom
+men's room
+morning room
+keep
+kitchen
+entry
+mud room
+nursery
+office
+operating room
+panic room
+pantry
+parlor
+playroom
+motel room
+powder room
+prison cell
+newsroom
+recovery room
+pool room
+rumpus room
+salesroom
+salon
+schoolroom
+screen porch
+scullery
+showroom
+sick room
+sitting room
+solarium
+staff room
+stateroom
+stockroom
+storeroom
+studio
+study
+rec room
+restroom
+sunroom
+tack room
+utility room
+suite
+visitors' room
+vestibule
+wardroom
+waiting room
+water closet
+washroom
+wine cellar
+women's room
+weight room
+workroom

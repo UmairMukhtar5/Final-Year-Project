@@ -1,0 +1,107 @@
+alarm clock
+barbecue grill
+air conditioner
+BBQ grill
+answering machine
+blender
+blow dryer
+burglar alarm
+calculator
+camera
+can opener
+CD player
+ceiling fan
+cell phone
+clock
+clothes dryer
+clothes washer
+coffee grinder
+coffee maker
+computer
+convection oven
+copier
+crock-pot
+curling iron
+dishwasher
+doorbell
+dryer
+edger
+electric blanket
+electric drill
+electric fan
+electric guitar
+electric keyboard
+electric pencil sharpener
+electric razor
+electric toothbrush
+espresso maker
+fan
+fax machine
+fire alarm
+fireplace
+fire extinguisher
+flashlight
+flatscreen TV
+food processor
+freezer
+furnace
+garage door
+garbage disposal
+grill
+hair clippers
+headphones
+heater
+hair dryer
+hood
+humidifier
+GPS
+ice cream maker
+juice
+iron
+hot plate
+laptop
+kerosene heater
+lamp
+lawn mower
+leaf blower
+microwave oven
+light
+mixer
+mousetrap
+MP3 player
+oven
+lantern
+pressure cooker
+printer
+percolator
+radio
+record player
+refrigerator
+rotisserie
+scale
+scanner
+sewing machine
+range
+smoke detector
+stapler
+stereo
+stove
+telephone
+television
+torch
+toaster
+toaster oven
+trash compactor
+trimmer
+TV
+vacuum cleaner
+timer
+vaporizer
+video camera
+VCR
+video game machine
+waffle iron
+walkie-talkie
+washing machine
+watch
+water heater

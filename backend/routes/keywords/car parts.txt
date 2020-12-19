@@ -1,0 +1,175 @@
+air conditioner
+accelerator
+air vent
+air filter
+airbag
+air conditioning
+alarm
+all-wheel drive
+alternator
+antenna
+anti-lock brakes
+armrest
+auto
+automatic transmission
+automobile
+axle
+baby car seat
+back-up lights
+baby seat
+battery
+bench seat
+bonnet
+brake light
+brake pedal
+brakes
+bucket seat
+bumper
+camshaft
+carburetor
+car
+catalytic converter
+chassis
+child car seat
+clutch
+chrome trim
+computer
+console
+cooling system
+crankshaft
+cruise control
+cylinder
+dashboard
+defroster
+differential
+diesel engine
+dip stick
+door
+door handle
+drive shaft
+drive belt
+driver's seat
+emergency brake
+emergency lights
+emissions
+engine
+engine block
+exhaust pipe
+exhaust system
+fan belt
+fender
+filter
+floor mat
+fog light
+four-wheel drive
+frame
+fuel
+fuse
+fuel gauge
+fuel cap
+gas gauge
+gas pedal
+gas tank
+gasket
+gas
+gasoline
+gauge
+gear shift
+gear stick
+gearbox
+glove compartment
+grille
+hand brake
+GPS
+headlamp
+headlight
+headrest
+high-beam headlights
+heater
+hood
+horn
+hubcap
+hybrid
+ignition
+instrument panel
+internal combustion engine
+jack
+interior light
+key
+license plate
+lock
+lights
+low-beam headlights
+lug bolt
+lug nut
+manifold
+manual transmission
+mat
+mirror
+moon roof
+motor
+muffler
+mud flap
+navigation system
+odometer
+oil
+oil filter
+oil tank
+parking brake
+parking lights
+passenger seat
+piston
+power brakes
+pedal
+power steering
+radiator
+radio
+rag top
+power window switch
+rear window defroster
+reverse light
+rear-view mirror
+rims
+roof
+rotary engine
+roof rack
+seat
+seat belt
+shift
+shock absorber
+side airbags
+side mirror
+spare tire
+spark plug
+speaker
+speedometer
+spoiler
+starter
+steering column
+steering wheel
+sun visor
+sunroof
+suspension
+tachometer
+tailgate
+temperature gauge
+thermometer
+tire
+trailer hitch
+transmission
+trim
+trip computer
+trunk
+turbo charger
+turn signal
+undercarriage
+unleaded gas
+valve
+vents
+visor
+warning light
+wheel
+wheel well
+window
+windshield
+windshield wiper

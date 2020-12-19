@@ -1,0 +1,103 @@
+A-frame
+apartment
+abode
+attached house
+adobe house
+barracks
+beach house
+boarding house
+brownstone
+building
+bungalow
+bunkhouse
+cabin
+caravan
+castle
+chalet
+chateau
+co-op
+condominium
+condo
+cottage
+country house
+crib
+dacha
+detached house
+domicile
+dorm
+dormitory
+double-wide
+dwelling
+duplex
+earth-sheltered house
+efficiency apartment
+estate
+farmhouse
+flat
+gabled house
+guest house
+hacienda
+hall
+high-rise home
+hotel
+house
+house trailer
+houseboat
+household
+hunting lodge
+housing project
+hut
+igloo
+inn
+living quarters
+lean-to
+lodge
+lodging
+loft
+log cabin
+longhouse
+maisonette
+manor
+microapartment
+mansion
+mobile home
+motel
+palace
+penthouse
+primary residence
+pied-á-terre
+pup tent
+quarters
+ranch house
+real estate
+residence
+residential hall
+roundhouse
+rooming house
+saltbox
+shack
+shelter
+row house
+skyscraper
+split-level house
+summer house
+studio apartment
+suite
+tenement
+tepee
+terraced house
+tipi
+townhouse
+tract house
+trailer home
+treehouse
+triplex
+Tudor
+unit
+vacation house
+villa
+wickiup
+wigwam
+yaodong
+tent
+yurt

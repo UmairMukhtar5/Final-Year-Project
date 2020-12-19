@@ -1,0 +1,93 @@
+aristocracy
+ballista
+archer
+baroness
+armor
+baron
+baronet
+bastion
+battering ram
+battle axe
+birthright
+castle
+catapult
+chateau
+chain mail
+chieftain
+chivalry
+count
+countess
+court jester
+crenelations
+crest
+crossbow
+crown
+crown jewels
+curtain wall
+donjon
+dragon
+drawbridge
+duchess
+duke
+dungeon
+dynasty
+earl
+empire
+feudal
+fort
+fortress
+gatehouse
+grand duke
+great hall
+heraldry
+hereditary
+highness
+honor
+imperial
+jester
+jousting
+king
+keep
+kingdom
+knight
+lady
+lady-in-waiting
+lance
+maid
+maiden
+mangonel
+lord
+manor
+marquis
+manor house
+Middle Ages
+moat
+monarch
+nobility
+noble
+onager
+palace
+peel tower
+peer
+prince
+princess
+queen
+realm
+reign
+Renaissance
+royal
+royalty
+scepter
+serf
+siege
+shield
+sword
+sovereign
+titles
+tower
+trebuchet
+unicorn
+viscount
+wall
+turret
+watchtower
