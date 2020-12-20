@@ -15,16 +15,16 @@ const API2 = "http://localhost:3000/othersPlatform3";
 
 
 class OthersPlatform extends Component {
-  
+
   constructor() {
     super();
 
     this.state = {
       youtube: "",
       queries: [],
-      error:false,
-      click:false,
-      disable:'a'
+      error: false,
+      click: false,
+      disable: 'a'
     };
 
     this.onChange = this.onChange.bind(this);
@@ -40,52 +40,52 @@ class OthersPlatform extends Component {
 
   onClick = async () => {
 
-    await this.setState({...this.state,disable:'b'})
+    await this.setState({ ...this.state, disable: 'b' })
 
-    setTimeout(async() => {
-    await this.setState({...this.state,disable:'c'})
-      
+    setTimeout(async () => {
+      await this.setState({ ...this.state, disable: 'c' })
+
     }, 10000);
 
     const { youtube } = this.state;
 
-    const resposive=await axios.post(API,{youtube});
-    this.setState({ ...this.state,youtube:''});
-    
+    const resposive = await axios.post(API, { youtube });
+    this.setState({ ...this.state, youtube: '' });
+
   };
 
-  handlequeriesclick=async ()=>{
+  handlequeriesclick = async () => {
 
-    this.setState({ error: false,click:'uncomplete'});
+    this.setState({ error: false, click: 'uncomplete' });
 
     const { youtube } = this.state;
-    const resposive = await axios.post(API2+'/button',{youtube})
+    const resposive = await axios.post(API2 + '/button', { youtube })
     console.log(resposive.data.result);
-    if(resposive.data.result){
-      this.setState({ queries: resposive.data.result, click:'complete'});
+    if (resposive.data.result) {
+      this.setState({ queries: resposive.data.result, click: 'complete' });
 
-    }else{
-      this.setState({ error: true,click:false});
+    } else {
+      this.setState({ error: true, click: false });
     }
   }
-  queryfetch=()=>{
-    if(this.state.disable==='a'){
+  queryfetch = () => {
+    if (this.state.disable === 'a') {
       return null
-    }else if(this.state.disable==='b'){
-      return 'fetch queries'
+    } else if (this.state.disable === 'b') {
+      return 'Please wait loading'
 
-    }else if(this.state.disable==='c'){
+    } else if (this.state.disable === 'c') {
 
-        return  <Button
-          onClick={this.handlequeriesclick}
-          color='primary'
-          margin='normal'
-          style={{
-            margin:'1rem'
-          }}
-          variant='contained'
+      return <Button
+        onClick={this.handlequeriesclick}
+        color='primary'
+        margin='normal'
+        style={{
+          margin: '1rem'
+        }}
+        variant='contained'
 
-          >Get all comments</Button>
+      >Show comments</Button>
     }
   }
 
@@ -98,10 +98,21 @@ class OthersPlatform extends Component {
   }
 
   printQuestions() {
-  if(this.state.error) return <div>{'Not data found for that query'}</div>
-  if(!this.state.click) return <div>{'Enter URL to get queries'}</div>
+    if (this.state.error) return <div>{'No data found for that query'}</div>
+    if (!this.state.click) return <div>{<h1
+      style={{
+        textAlign: "center",
+        fontFamily: "Roboto",
+        color: "#4A96BA",
+        fontWeight: "bolder",
+        marginBottom: "3%",
+      }}
+    >
+      Please Enter URL to get processed queries!
+    </h1>}</div>
 
-    if (this.state.click==='uncomplete') {
+
+    if (this.state.click === 'uncomplete') {
       return (
         <div
           style={{
@@ -132,9 +143,9 @@ class OthersPlatform extends Component {
           </h1>
         </div>
       );
-    } 
-    
-    if(this.state.click==='complete'){
+    }
+
+    if (this.state.click === 'complete') {
       return this.state.queries.map((data, key) => {
         return (
           <div>
@@ -191,7 +202,7 @@ class OthersPlatform extends Component {
 
 
   render() {
-  console.log(this.state);
+    console.log(this.state);
 
     return (
       <div
@@ -240,14 +251,15 @@ class OthersPlatform extends Component {
               marginRight: "1%",
               alignItems: "center",
               justifyContent: "center",
-              display:'flex',
-              flexDirection:'column',
-              alignItems:'center'
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+
 
             }}
           >
             <div
-              
+
             >
               <h3
                 style={{
@@ -263,24 +275,21 @@ class OthersPlatform extends Component {
             </div>
 
             <TextField
-             
-              margin='normal'
-              fullWidth
-              
-              id="outlined-basic"
+
+
+              fullWidth id="outlined-basic"
               label="Just Enter Youtube Stream URL here"
               variant="outlined"
               name="youtube"
               value={this.state.youtube}
               onChange={this.onChange}
-            />       
-              <Button
+            />
+            <Button
               onClick={this.onClick}
               variant="contained"
               color="primary"
-              fullWidth
-              style={{marginTop:'1rem'}}
-             
+              style={{ marginTop: '1rem' }}
+
             >
               Submit
           </Button>
@@ -319,8 +328,22 @@ class OthersPlatform extends Component {
                   Most Important Queries !{" "}
               </h1>
             </div>
-          {this.queryfetch()}
-            <div style={{}}>{this.printQuestions()}</div>
+
+
+
+            <div style={{
+              width: "100%",
+              textAlign: "center",
+              alignContent: "center",
+              alignItems: "center",
+
+
+              borderRadius: 20,
+              borderWidth: 20,
+            }}>
+
+              {this.queryfetch()}
+              {this.printQuestions()}</div>
           </div>
 
 

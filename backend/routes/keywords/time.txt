@@ -1,0 +1,158 @@
+afterwards
+after
+afternoon
+AM
+alarm clock
+analog clock
+ante meridian
+annual
+anytime
+autumn
+autumnal equinox
+bedtime
+before
+before hand
+belated
+bell
+bicentennial
+biennial
+calendar
+calendar year
+century
+chronological
+chronology
+chronometer
+clock
+clock face
+Coordinated Universal Time
+cuckoo clock
+day
+daylight
+days of the week
+daylight savings time
+daytime
+decade
+decennium
+delay
+delayed
+dial
+digital clock
+DST
+early
+eon
+epoch
+equinox
+era
+evening
+everyday
+face (of a clock)
+fall
+fiscal year
+fortnight
+future
+galactic year
+geologic time
+gnomon
+grandfather clock
+Greenwich Mean Time
+half-life
+hands
+high noon
+horology
+hour
+hour hand
+hourglass
+IDL
+International Date Line
+jubilee
+jiffy
+late
+later
+leap second
+leap year
+lunar month
+meridian
+midmorning
+microsecond
+midnight
+midafternoon
+millennium
+millisecond
+minute
+minute hand
+moment
+momentarily
+month
+morning
+nanosecond
+night
+nighttime
+noon
+now
+o'clock
+overtime
+pendulum clock
+on time
+past
+per annum
+per diem
+period
+picosecond
+pocket watch
+PM
+premature
+post meridian
+prime meridian
+present
+quarter hour
+quartz clock
+quaver
+schedule
+punctual
+season
+second
+second hand
+semester
+semiquaver
+shift
+sidereal time
+solstice
+someday
+sometime
+soon
+spring
+stopwatch
+summer
+summer solstice
+sunrise
+sundial
+sunset
+synchronized
+tardy
+tempo
+then
+time
+time zone
+timekeeper
+timepiece
+timer
+timetable
+today
+tomorrow
+tonight
+triennium
+trimester
+twilight
+UTC
+vernal equinox
+watch
+water clock
+week
+winter solstice
+winter
+wristwatch
+year
+yesterday
+yesteryear
+zone
+Zulu time

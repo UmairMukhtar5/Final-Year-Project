@@ -1,0 +1,224 @@
+accelerant
+air mask
+air tank
+access
+alarm
+accident
+ambulance
+arson
+ashes
+ax
+axe
+backfire
+badge
+barricade
+battalion
+battle
+blackened
+blaze
+boots
+bravery
+burn
+bystander
+captain
+carabiner
+catalyst
+catastrophe
+cause
+caution
+chain reaction
+char
+chemicals
+collapse
+command
+communication
+conflagration
+contain
+control
+courage
+coveralls
+crackle
+crawl
+crew
+Dalmatian
+danger
+dangerous
+damage
+daunting
+deadly
+defeat
+defense
+deliberate
+department
+deploy
+destruction
+dispatch
+douse
+drill
+embers
+emergency
+encounter
+encroach
+energy
+enforcement
+engine
+engulf
+equipment
+escape
+escape route
+event
+evidence
+experience
+explosion
+explosive
+extinguish
+extinguisher
+fatigue
+ferocious
+fierce
+fire
+fire alarm
+fire drill
+fire engine
+fire extinguisher
+fire hook
+fire station
+fire hydrant
+fire truck
+firefighter
+firehouse
+fireproof
+flame
+firestorm
+flashlight
+flashpoint
+foam
+gas detector
+gauge
+gear
+glow
+fury
+generate
+gloves
+grime
+harm
+harness
+hazard
+headquarters
+haze
+heat
+helmet
+hero
+heroic
+hood
+hose
+help
+hydrant
+ignite
+ignition
+impact
+incendiary
+incident
+inferno
+inflammable
+inspect
+inhalation
+inspection
+insurance
+investigate
+investigation
+intense
+jack, hydraulic
+jaws of life
+jacket
+jumpsuit
+Kevlar
+kill
+kindling
+kit
+ladder
+ladder truck
+launch
+location
+matches
+mission
+nozzle
+official
+organize
+oxygen
+pain
+panic
+paramedic
+peril
+plumes
+pole
+pressure
+prevention
+pump
+pumper truck
+pyromania
+quarters
+quench
+radio
+rapid
+react
+recruit
+recovery
+regulation
+rescue
+retreat
+risk
+rope
+rush
+safely
+safety
+save
+scar
+scene
+scorch
+search
+shield
+sensor
+shift
+shock
+siren
+situation
+smoke
+smoke alarm
+smoke detector
+smother
+sparks
+sprinkler
+sprinkler system
+squad
+stamina
+strategy
+struggle
+survival
+survive
+survivor
+suspenders
+suspicious
+tanker truck
+technique
+temperature
+terror
+threat
+threatening
+tools
+torch
+training
+tragedy
+trust
+turnout jacket
+turnout pants
+two-way radio
+valor
+vanquish
+ventilation
+venting
+volunteer
+watch
+water
+wind
+witness

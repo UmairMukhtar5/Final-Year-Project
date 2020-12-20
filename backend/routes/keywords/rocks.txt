@@ -1,0 +1,120 @@
+agate
+aquamarine
+amber
+amethyst
+aventurine
+azurite
+basalt
+beryl
+calcite
+alexandrite
+carat
+carnelian
+chalcedony
+citrine
+coal
+coral
+crystal
+density
+druze
+diamond
+dolomite
+emerald
+facet
+fire opal
+feldspar
+fool's gold
+fluorite
+fossil
+garnet
+gem
+gemstone
+geode
+geology
+gneiss
+gold
+granite
+gravel
+gypsum
+hardness
+hematite
+howlite
+igneous rock
+inclusion
+jade
+jadeite
+jasper
+jet
+karat
+kunzite
+labradorite
+lapidary
+lapis lazuli
+lava
+limestone
+lithified
+loess
+luster
+magma
+magnetite
+malachite
+metamorphic rock
+meteoroid
+mica
+mineral
+moss agate
+moonstone
+nephrite
+obsidian
+opal
+orthoclase
+pebble
+peridot
+petrified wood
+pumice
+pyrite
+pyroclastic flow
+quartz
+rock
+rock cycle
+rose quartz
+ruby
+salt
+sand
+sandstone
+sapphire
+sard
+sardonyx
+schist
+seismograph
+sedimentary rock
+silica
+serpentine
+silt
+soapstone
+sodalite
+spinel
+stalactite
+stalagmite
+stone
+talc
+talus
+semi-precious
+topaz
+tourmaline
+tsavorite
+turquoise
+tiger's eye
+vitreous
+volcanic bomb
+volcanic glass
+unakite
+vulcanite
+wairakite
+xalostocite
+volcano
+xyloid jasper
+yeatmanite
+zircon
+xenolith
+zoisite

@@ -1,0 +1,217 @@
+abeam
+aloft
+amphibious vehicle
+aircraft carrier
+anchor
+aft
+astern
+aground
+bail
+ballast
+barge
+barque
+bathyscaphe
+battlecruiser
+battleship
+beam
+bearing
+bilge
+boat
+boat lift
+boater
+boating
+boatswain
+boom
+bow
+bowsprit
+bulkhead
+buoy
+canoe
+capsize
+cabin cruiser
+caravel
+cargo ship
+cast off
+carrier
+catamaran
+clipper
+cockpit
+container ship
+convoy
+crew
+crow's nest
+cruise
+cruise ship
+cruiser
+current
+cutter
+Davy Jones' locker
+deck
+deckhands
+destroyer
+dinghy
+displacement
+dock
+docking
+dory
+draft
+dreadnought
+drift
+dry dock
+dugout
+engine
+engine room
+escort ship
+fathom
+ferry
+figurehead
+fireboat
+fishing boat
+flat-bottom boat
+flotilla
+foremast
+foresail
+freighter
+funnel
+frigate
+furl
+galleon
+galley
+gangway
+gondola
+gunwale
+gunboat
+halyard
+headsail
+helm
+helmsman
+hoist
+houseboat
+hovercraft
+hull
+hydrofoil
+hydroplane
+ice breaker
+inboard motor
+jib
+jet boat
+junk
+kayak
+keel
+keelboat
+knot
+ketch
+landing craft
+larboard
+launch
+leeward
+league
+lifeboat
+lifeline
+limey
+lines
+listing
+mainmast
+lanyard
+log
+marine
+mariner
+maritime
+mast
+mizzen
+mizzenmast
+mooring
+motor launch
+motorboat
+narrowboat
+nautical
+nautical mile
+naval
+navigate
+navy
+nun buoy
+oar
+ocean going
+ocean liner
+offshore
+oil tanker
+onboard
+outboard motor
+outrigger canoe
+overboard
+paddle
+passage
+passenger
+pedal boat
+pennant
+personal flotation device
+PFD
+pirate
+police boat
+port
+porthole
+propeller
+powerboat
+PT boat
+punt
+raft
+rigging
+riverboat
+rocket boat
+rope
+row
+rowboat
+rudder
+runabout
+sail
+sailboat
+sailor
+schooner
+scull
+seafarer
+seasick
+ship
+shrimp boat
+ski boat
+skipjack
+sloop
+speedboat
+spinnaker
+starboard
+steamboat
+steamship
+stern
+stow
+submarine
+submersible
+swift boat
+tack
+tanker
+tender
+tide
+tiller
+topsail
+towboat
+transom
+trawler
+tug
+tugboat
+U-boat
+umiak
+undocking
+vessel
+voyage
+wake
+warship
+water taxi
+water-borne
+watercraft
+waterline
+whaler
+wheel
+wheelhouse
+winch
+windjammer
+windward
+yacht
+yawl

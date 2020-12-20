@@ -1,0 +1,133 @@
+aphid
+ant
+admiral butterfly
+armyworm
+ambush bug
+assassin bug
+atlas moth
+backswimmer
+bedbug
+bee
+beetle
+blue morpho butterfly
+bluet
+borer
+brown butterfly
+bug
+buckeye butterfly
+bumblebee
+butterfly
+carpenter ant
+caterpillar
+chrysalis
+cicada
+cockroach
+comma butterfly
+copper butterfly
+crane fly
+cricket
+cutworm
+damselfly
+darkling beetle
+dragonfly
+dung beetle
+earwig
+egg
+fire ant
+firefly
+flea
+fly
+fritillary butterfly
+fruit fly
+gnat
+gossamer-winged butterfly
+grasshopper
+green darner dragonfly
+ground beetle
+grub
+gypsy moth
+hairstreak butterfly
+harlequin bug
+honeybee
+hornet
+house fly
+horse fly
+hover fly
+imago
+insect
+Japanese beetle
+Julia butterfly
+jumping bean
+June bug
+katydid
+kissing bug
+lacewing
+ladybug
+larva
+leafcutter ant
+lice
+leafhopper
+lightning bug
+longhorn beetle
+locust
+louse
+luna moth
+maggot
+mantid
+mantis
+mayfly
+meadowhawk
+mealworm
+metalmark butterfly
+midge
+milkweed bug
+monarch
+metamorphosis
+morpho
+mosquito
+moth
+nymph
+Oregon silverspot butterfly
+owl butterfly
+painted lady butterfly
+pond skater
+planthopper
+paper wasp
+praying mantid
+praying mantis
+pupa
+Queen Alexandra's birdwing butterfly
+roach
+robber fly
+scarab
+silkworm
+silverfish
+skipper
+springtail
+spittlebug
+stag beetle
+snout butterfly
+stink bug
+stonefly
+sulphur butterfly
+swallowtail butterfly
+termite
+thrip
+tiger beetle
+tiger moth
+Ulysses butterfly
+tsetse fly
+viceroy butterfly
+walking stick
+wasp
+water boatman
+water bug
+water strider
+weevil
+wood nymph butterfly
+wood-borer
+woolly bear caterpillar
+yellow-white butterfly
+yellowjacket
+zebra longwing butterfly
+zebra swallowtail butterfly

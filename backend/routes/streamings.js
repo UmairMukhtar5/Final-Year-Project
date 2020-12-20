@@ -62,8 +62,7 @@ streamingRouter
         // authour: req.body.authour,
         description: req.body.description,
         photo: "http://localhost:3000/streamimages/" + req.file.filename,
-        streamcode: req.body.streamcode,
-        allqueries: ["hi I am ifrst", "Hi I am secong"]        // Type: req.body.Type,
+        streamcode: req.body.streamcode        // Type: req.body.Type,
       })
         .then(
           (streaming) => {
@@ -151,71 +150,71 @@ streamingRouter
   });
 
 
-  streamingRouter
+streamingRouter
   .route("/getstream/:streamname")
-  .get(async(req, res, next) => {
-    const streaming=await Streamings.find({ name: req.params.streamname  });
+  .get(async (req, res, next) => {
+    const streaming = await Streamings.find({ name: req.params.streamname });
     const stream = req.params.streamname;
-    if(streaming){
-      
+    if (streaming) {
+
 
       const spawn = require("child_process").spawn;
       // let youtubeUrl= 'https://www.youtube.com/watch?v=gjPCYfXJIQU';
-    
-      const process1 = spawn("py", ["./StreamProcessing.py", stream], {stdio: "inherit"});
-    
+
+      const process1 = spawn("py", ["./StreamProcessing.py", stream], { stdio: "inherit" });
+
       process1.on("data", (data) => {
         console.log(data.toString());
-        res.status(200).json({ msg: data.toString()});
+        res.status(200).json({ msg: data.toString() });
       });
-    
-      process1.on('close', function(code) {
-        if ( code === 1 ){
-            process.stderr.write("error occured",code);
-            process.exit(1);
+
+      process1.on('close', function (code) {
+        if (code === 1) {
+          process.stderr.write("error occured", code);
+          process.exit(1);
         }
-        else{
-            process.stdout.write('"python script exited with code: ' + code + '\n');
-        }   
+        else {
+          process.stdout.write('"python script exited with code: ' + code + '\n');
+        }
       })
       return res.send(streaming);
-    }else{
-       res.send(false)
+    } else {
+      res.send(false)
     }
 
 
   })
 
 
-  streamingRouter
+streamingRouter
   .route("/questionAnswer")
   .post(async (req, res, next) => {
 
-    console.log('req.body ',req.body);
+    console.log('req.body ', req.body);
 
-    const {streamName,question,answer}= req.body;
+    const { streamName, question, answer } = req.body;
 
-    const dataabx=await Streamings.findOne({name:streamName});
+    const dataabx = await Streamings.findOne({ name: streamName });
 
-    console.log('this is sllec ',dataabx);
-   
-    const reviwes={
+    console.log('this is sllec ', dataabx);
+
+    const reviwes = {
       question,
       answer
-    
+
     };
 
-  await dataabx.questionAnswer.push(reviwes)
-   const dsdfata=await dataabx.save();
+    await dataabx.questionAnswer.push(reviwes)
+    const dsdfata = await dataabx.save();
 
-    console.log('result ',dsdfata);
+    console.log('result ', dsdfata);
 
 
     res.send(dsdfata)
 
 
 
-  
+
   })
 
 
@@ -223,23 +222,23 @@ streamingRouter
 
 
 
-  streamingRouter
+streamingRouter
   .route("/vislutos")
   .post(async (req, res, next) => {
 
-    const {name}= req.body;
-    const dad=decodeURI(name);
+    const { name } = req.body;
+    const dad = decodeURI(name);
 
-    console.log('here ',dad);
+    console.log('here ', dad);
 
 
-    console.log('here is ',dad);
-   const dataabx=await Streamings.findOne({name:dad});
+    console.log('here is ', dad);
+    const dataabx = await Streamings.findOne({ name: dad });
 
-   
-  console.log('dataabx ',dataabx);
 
-  const questionsAnswerws= dataabx.questionAnswer;
+    console.log('dataabx ', dataabx);
+
+    const questionsAnswerws = dataabx.questionAnswer;
     // const {question,answer}=questionsAnswerws;
 
 
@@ -247,7 +246,7 @@ streamingRouter
 
 
 
-  
+
   })
 
 

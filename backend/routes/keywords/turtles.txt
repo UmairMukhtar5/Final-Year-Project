@@ -1,0 +1,96 @@
+adder
+alligator
+American crocodile
+anole
+anaconda
+basilisk
+angonoka
+asp
+African rock python
+bearded dragon
+black racer
+black caiman
+blue-tongued skink
+boa constrictor
+box turtle
+bull snake
+caiman
+chameleon
+collared lizard
+cobra
+copperhead
+coral snake
+corn snake
+cottonmouth
+crocodile
+Cryptoclidus
+desert tortoise
+Desmatosuchus
+diamondback rattlesnake
+Emerald tree boa
+frilled lizard
+gaboon viper
+Galapagos tortoise
+garter snake
+gavial
+gecko
+gharial
+gila monster
+girdled lizard
+glass lizard
+gopher snake
+green iguana
+ground skink
+horned lizard
+iguana
+indigo snake
+Jamaican boa
+king cobra
+kingsnake
+Komodo dragon
+leatherback turtle
+Liopleurodon
+loggerhead turtle
+lizard
+mamba
+map turtle
+monitor lizard
+mountain viper
+mud snake
+mud turtle
+musk turtle
+osage copperhead
+Nile crocodile
+painted turtle
+pine snake
+pit viper
+ploughshare tortoise
+python
+Postosuchus
+racer snake
+rat snake
+rattlesnake
+reptile
+ribbon snake
+ringneck snake
+sea turtle
+slow worm
+skink
+snake
+softshell turtle
+snapping turtle
+spectacled caiman
+spiny lizard
+taipan
+timber rattler
+tortoise
+tuatara
+twig snake
+veiled chameleon
+turtle
+viper
+water moccasin
+water turtle
+whipsnake
+whiptail lizard
+yellow-foot tortoise
