@@ -38,23 +38,28 @@ app.post("/instra/button", async (req, res) => {
     }
   });
 
-  setTimeout(() => {
-    MongoClient.connect(url, function(err, db) {
+  MongoClient.connect(url, function (err, db) {
 
-        var dbo = db.db("mydb");
-  
-        dbo.collection("youtube").findOne({URL:youtubeUrl}, async function(err, result) {
-          if(result){
-            const answer=result.process_comments;
-            await db.close();
-            return res.send({result:answer})
-  
-          }else{
-            return res.send({result:false})
-          }
-        });
-      });
-}, 30000);
+    var dbo = db.db("mydb");
+
+    dbo.collection("insta").findOne({ URL: youtubeUrl }, async function (err, result) {
+      if (result) {
+
+        const answer = result.process_comments;
+
+        await db.close();
+
+
+        return res.send({ result: answer })
+
+
+      } else {
+        return res.send({ result: false })
+
+      }
+
+    });
+  });
 
 })
 
