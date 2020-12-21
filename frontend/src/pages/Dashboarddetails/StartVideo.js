@@ -8,21 +8,21 @@ import { GooSpinner } from "react-spinners-kit";
 import { WhisperSpinner } from "react-spinners-kit";
 import QuestionAnsBox from './QuestionAnsCard';
 import Dictaphone1 from './VoiceToMessge';
-import { Button } from '@material-ui/core';
+import {Button} from '@material-ui/core';
 import axios from 'axios'
 
 class StartVideo extends Component {
   constructor(props) {
-
+    
     super(props);
     this.state = {
-      message: '',
-      queries: [],
+      message:'',
+      queries:[],
       streamname: "",
-      question: "",
+      question:"",
       answer: "",
-      Editclick: false,
-      fetcclick: true
+      Editclick:false,
+      fetcclick:true
 
 
     };
@@ -32,10 +32,10 @@ class StartVideo extends Component {
     // this.getData = this.getData.bind(this);
   }
 
-
-  handelclick = (data) => {
-    console.log('is here is fata ', data);
-    this.setState({ ...this.state, question: data });
+  
+  handelclick=(data)=>{
+    console.log('is here is fata ',data);
+    this.setState({...this.state, question: data });
   }
 
   handleToUpdate(someArg) {
@@ -43,63 +43,15 @@ class StartVideo extends Component {
     this.setState({ answer: someArg });
   }
 
-  getData = (message) => {
-    this.setState({ ...this.state, answer: message })
+  getData=(message)=>{
+    this.setState({...this.state,answer:message})
   }
 
 
 
-  fetchqueriesclick = () => {
+  fetchqueriesclick=()=>{
     // fetcclick
-    this.setState({ ...this.state, fetcclick: false });
-
-    // console.log('insta is workdf');
-
-
-
-    if (localStorage.getItem("streamname")) {
-      this.setState({ streamname: localStorage.getItem("streamname") });
-      // console.log('here is if');
-      // // requests the server to access thsi stream so we can take out queries and display
-      axios.get("http://localhost:3000/streamings/getstream/" + localStorage.getItem("streamname"))
-        .then((response) => {
-          console.log('response ', response);
-          if (!!response.data[0] && !!response.data[0].process_comments) {
-            if (!!response.data[0].process_comments.length !== 0) {
-
-              console.log('if ');
-              // console.log(response.data.process_comments);
-
-              this.setState({ queries: response.data[0].process_comments });
-
-
-            } else {
-
-              this.setState({ message: 'no query found' });
-
-            }
-
-
-
-          } else {
-
-
-            this.setState({ message: 'no query found' });
-
-
-          }
-        })
-
-
-    } else { console.log('no stream name found'); }
-
-  }
-
-  componentDidMount() {
-    this.streamFunc();
-
-
-    this.setState({ ...this.state, fetcclick: false });
+    this.setState({ ...this.state,fetcclick:false});
 
     console.log('insta is workdf');
 
@@ -109,48 +61,95 @@ class StartVideo extends Component {
       this.setState({ streamname: localStorage.getItem("streamname") });
       console.log('here is if');
       // requests the server to access thsi stream so we can take out queries and display
-      axios.get("http://localhost:3000/streamings/getstream/" + localStorage.getItem("streamname"))
-        .then((response) => {
-          console.log('response ', response.data);
-          if (!!response.data[0]) {
-            if (response.data[0].allqueries.length !== 0) {
+      axios.get("http://localhost:3000/streamings/getstream/"+localStorage.getItem("streamname"))
+        .then((response) =>{
+          console.log('response ',response);
+          if(!!response.data[0] && !!response.data[0].process_comments){
+            if(!!response.data[0].process_comments.length!==0){
 
-              console.log('if ');
-              // console.log(response.data.process_comments);
+            console.log('if ');
+            // console.log(response.data.process_comments);
 
-              this.setState({ queries: response.data[0].allqueries });
+            this.setState({ queries: response.data[0].process_comments });
 
 
-            } else {
+            }else{
 
-              this.setState({ message: 'no query found' });
-
+              this.setState({ message:'no query found'  });
+      
             }
+          
 
 
+          }else{
 
-          } else {
 
-
-            this.setState({ message: 'no query found' });
+        this.setState({ message:'no query found'  });
 
 
           }
         })
+        
 
-
-    } else {
-      this.setState({ message: 'no stream name found' });
-
-    }
-    //console.log('here we go sir');
+    }else{console.log('no stream name found');}
 
   }
 
+  componentDidMount() {
+    this.streamFunc();
+    
+    
+    this.setState({ ...this.state,fetcclick:false});
 
-  halegetquestionvalue = (value) => {
-    this.setState({ ...this.state, question: value, Editclick: false });
-  }
+    console.log('insta is workdf');
+   
+   
+   
+    if (localStorage.getItem("streamname")) {
+      this.setState({ streamname: localStorage.getItem("streamname") });
+      console.log('here is if');
+      // requests the server to access thsi stream so we can take out queries and display
+      axios.get("http://localhost:3000/streamings/getstream/"+ localStorage.getItem("streamname"))
+        .then((response) =>{
+          console.log('response ',response.data);
+          if(!!response.data[0]){
+            if(response.data[0].allqueries.length!==0){
+   
+            console.log('if ');
+            // console.log(response.data.process_comments);
+   
+            this.setState({ queries: response.data[0].allqueries });
+   
+   
+            }else{
+   
+              this.setState({ message:'no query found'  });
+      
+            }
+          
+   
+   
+          }else{
+   
+   
+        this.setState({ message:'no query found'  });
+   
+   
+          }
+        })
+        
+   
+    }else{  this.setState({ message:'no stream name found'  });
+    
+   }
+ //console.log('here we go sir');
+
+}
+
+
+ halegetquestionvalue=(value)=>{
+  this.setState({...this.state, question: value,Editclick:false });
+ }
 
   streamFunc = () => {
     const socket = io.connect("http://localhost:4001");
@@ -225,58 +224,56 @@ class StartVideo extends Component {
   }
 
 
-  clearAllfieldhandeler = () => {
-    this.setState({
-      ...this.state, question: "",
-      answer: "",
-    });
+  clearAllfieldhandeler=()=>{
+    this.setState({...this.state,question:"",
+    answer: "", });
 
 
   }
 
-  handlesendDataqueseio = () => {
-    this.setState({ ...this.state, Editclick: true });
+  handlesendDataqueseio=()=>{
+    this.setState({...this.state,Editclick:true});
 
-
-
+  
+  
 
   }
 
-  //   handelfetxhdataclick=()=>{
-  //     if (localStorage.getItem("streamname")) {
-  //       this.setState({ streamname: localStorage.getItem("streamname") });
+//   handelfetxhdataclick=()=>{
+//     if (localStorage.getItem("streamname")) {
+//       this.setState({ streamname: localStorage.getItem("streamname") });
 
-  // console.log('here is if');
+// console.log('here is if');
 
-  //       // requests the server to access thsi stream so we can take out queries and display
-  //       axios.get("http://localhost:3000/streamings/getstream/button"+localStorage.getItem("streamname"))
-  //         .then((response) =>{
-  //           console.log('response ',response.data[0].process_comments);
-  //           if(response.data[0]){
+//       // requests the server to access thsi stream so we can take out queries and display
+//       axios.get("http://localhost:3000/streamings/getstream/button"+localStorage.getItem("streamname"))
+//         .then((response) =>{
+//           console.log('response ',response.data[0].process_comments);
+//           if(response.data[0]){
 
-  //             // console.log(response.data.process_comments);
+//             // console.log(response.data.process_comments);
 
-  //         this.setState({ queries: response.data[0].process_comments });
-
-
-  //           }else{
-  //         this.setState({ message:'no query found'  });
+//         this.setState({ queries: response.data[0].process_comments });
 
 
-  //           }
-  //         })
+//           }else{
+//         this.setState({ message:'no query found'  });
 
 
-  //     }else{console.log('no stream name found');}
+//           }
+//         })
+        
 
-  //   }
+//     }else{console.log('no stream name found');}
+
+//   }
 
 
 
 
   printQuestions() {
-    if (this.state.fetcclick) return null;
-    if (this.state.queries.length === 0 && !this.state.fetcclick) return 'No Comment Found'
+    if(this.state.fetcclick) return null;
+    if (this.state.queries.length===0 &&   !this.state.fetcclick) return 'No Comment Found'
     // if (this.state.queries.length===0) {
     //   return (
     //     <div
@@ -309,7 +306,7 @@ class StartVideo extends Component {
     //     </div>
     //   );
     // } 
-    if (this.state.queries.length !== 0) {
+    if (this.state.queries.length!==0) {
       return this.state.queries.map((data, key) => {
         return (
           <div key={key} >
@@ -322,9 +319,9 @@ class StartVideo extends Component {
                 borderRadius: 10,
                 padding: "3%",
                 marginBottom: "2%",
-
+              
               }}
-              onClick={() => this.handelclick(data)}
+              onClick={()=> this.handelclick(data)}
               className="justforhover"
 
             >
@@ -346,12 +343,12 @@ class StartVideo extends Component {
                   marginLeft: "2%",
                   marginTop: 8,
                 }}
-
+             
 
               >
-                <p
-
-                  style={{ textAlign: "left", color: "white", fontSize: 12 }}>
+                <p 
+                
+                style={{ textAlign: "left", color: "white", fontSize: 12 }}>
                   {data}
                 </p>
               </div>
@@ -457,74 +454,52 @@ class StartVideo extends Component {
                   {" "}
                   Most Important Queries!{"              "}
                   <br></br>
-                  {/* <Button className="FormField__Button mr-80"
-                    onClick={this.fetchqueriesclick}
+                  <Button
+                  onClick={this.fetchqueriesclick}
                   >
                     Process Queries
-                  </Button> */}
-
-                  <Button
-                    onClick={this.fetchqueriesclick}
-                    color='primary'
-                    margin='normal'
-                    style={{
-                      margin: '1rem'
-                    }}
-                    variant='contained'
-
-                  >  Process Queries</Button>
+                  </Button>
                 </h1>
-
+                  
               </div>
-
+              
               <div style={{}}>
 
-
-
+             
+                
                 {this.printQuestions()}
-
-              </div>
-
+                
+                </div>
+           
             </div>
-
-
+          
+          
           </div>
           <canvas style={{ display: "none" }} id="preview"></canvas>
-
-
-          <div style={{
-            margin: '1rem'
-          }}>          <QuestionAnsBox
-              question={this.state.question}
-              answer={this.state.answer}
-              textfiledchange={this.state.Editclick}
-              getquestionvalue={this.halegetquestionvalue}
-            />
-          </div>
-
-
-        </div>
-
-        <div style={{
-          backgroundColor: "pink",
-          width: "100%",
-          alignItems: "center"
-        }}>
-          <Dictaphone1
-            sendData={this.getData}
+          <QuestionAnsBox
             question={this.state.question}
-            clearAllfield={this.clearAllfieldhandeler}
-            sendDataqueseio={this.handlesendDataqueseio}
-
-          />
-
+            answer={this.state.answer}
+            textfiledchange={this.state.Editclick}
+            getquestionvalue={this.halegetquestionvalue}
+            />
+       
+           
         </div>
+        <Dictaphone1
+        sendData={this.getData}
+        question={this.state.question}
+        clearAllfield={this.clearAllfieldhandeler}
+        sendDataqueseio={this.handlesendDataqueseio}
+      
+        />
+       
+    
+ 
 
 
-
-      </React.Fragment>
-
-
+        </React.Fragment>
+    
+   
     );
   }
 }
